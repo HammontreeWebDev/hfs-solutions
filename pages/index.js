@@ -8,7 +8,7 @@ export default function Home() {
         <title>KailebHammontree.com</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <p>This is test text</p>
+      <p className={styles.mainText}>This is test text</p>
     </div>
   );
 }

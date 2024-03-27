@@ -1,3 +1,21 @@
+:root {
+
+  /* Color Scheme */
+  --primary1: #B83FFC;
+  --primary2: #FC3F96;
+  --primary3: #F63FFC;
+  --primary4: #7A3FFC;
+  --primary5: #FC473F;
+
+  --alt1: #F993FC;
+  --alt2: #725E7D;
+  --alt3: #7D5E6C;
+  --alt4: #675E7D;
+  --alt5: #7D5F5E;
+
+}
+
+
 html,
 body {
   display: flex;
