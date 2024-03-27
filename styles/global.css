@@ -42,3 +42,8 @@ body {
     Helvetica Neue,
     sans-serif;
 }
+
+/* global class to avoid renaming the class in every single css sheet */
+.mainText {
+  font-family: var(--main-text);
+}
