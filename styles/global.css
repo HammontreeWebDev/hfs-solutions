@@ -26,7 +26,8 @@ body {
   gap: 20px;
   padding: 0;
   margin: 0;
-  background-color: red;
+  background-color: var(--primary4);
+  color: white;
   font-family:
     Inter,
     -apple-system,
