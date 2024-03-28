@@ -1,11 +1,11 @@
+// TODO: Use Material UI's Skeleton Component and wrap various things as a loading div
+
 import Head from "next/head";
 import "../styles/global.css";
 
 // import fonts from next/font/google to avoid making requests from google
 import { Architects_Daughter } from 'next/font/google';
 import { Josefin_Sans } from "next/font/google";
-import { Suspense } from "react";
-import Loading from "../components/loading";
 
 // store fonts in a variable and specify parameters
 const architectsDaughter = Architects_Daughter({
@@ -38,9 +38,7 @@ const App = ({ Component, pageProps }) => {
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
-            <Suspense fallback={<Loading />}>
                 <Component {...pageProps} />
-            </Suspense>
         </>
     )
 };
