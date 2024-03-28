@@ -67,12 +67,12 @@ main {
 .titleText {
   font-family: var(--main-text);
   color: white;
-  font-size: 80px;
+  font-size: 60px;
   line-height: normal;
 }
 .disclaimerText{
   font-family: var(--main-text);
   color: var(--primary5);
-  font-size: 40px;
+  font-size: 30px;
   line-height: normal;
 }
