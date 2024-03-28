@@ -1,9 +1,20 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from '../styles/TitleCarousel.module.css';
 
 export default function TitleCarousel({ titleText, images, disclaimerText, reverseText }) {
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            const newIndex = (currentImageIndex + 1) % images.length;
+            setCurrentImageIndex(newIndex);
+        }, 5000);
+
+        return () => {
+            clearInterval(intervalId);
+        };
+    }, [currentImageIndex, images]);
 
     const nextSlide = () => {
         const newIndex = (currentImageIndex + 1) % images.length;
