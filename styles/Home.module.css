@@ -1,7 +1,8 @@
+/* Override the previous css for the components*/
 .rowReverse {
-    flex-direction: row-reverse;
+    flex-direction: row-reverse!important;
 }
 
 .reverseText {
-    text-align: left;
+    text-align: left!important;
 }

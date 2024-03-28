@@ -38,8 +38,8 @@ export default function Home() {
         <RowSectionContainer changeClass={styles.rowReverse} jsxContent={
           <TitleCarousel reverseText={styles.reverseText}
             images={['../img/home-page/MongoDB.svg', '../img/home-page/ExpressJS.svg', '../img/home-page/ReactJS.svg', '../img/home-page/NodeJS.svg', '../img/home-page/Apollo.svg', '../img/home-page/GraphQL.svg']}
-            titleText={`Full-Stack Web Development`}
-            disclaimerText={`For websites and applications that require dynamic and flexible data retrieval`}
+            titleText={`Front-End Web Development`}
+            disclaimerText={`For landing pages, portfolios, and other websites that do not require a back-end server`}
           />
         } />
 
