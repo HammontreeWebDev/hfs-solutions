@@ -1,4 +1,5 @@
 import styles from '../styles/TitleImage.module.css';
+import Image from 'next/image';
 
 export default function TitleImage(props) {
     return (
@@ -12,7 +13,7 @@ export default function TitleImage(props) {
 
             {/* Right Side: Image */}
             <div className={`column`}>
-
+                <Image className={styles.image} src={props.imageSrc} height={703.125} width={875} />
             </div>
 
         </>
