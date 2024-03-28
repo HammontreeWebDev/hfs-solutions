@@ -13,21 +13,32 @@ export default function Home() {
       </Head>
       <Header />
       <main>
+
+      {/* // !Row 1 - TitleImage Component // */}
         <RowSectionContainer jsxContent={
 
-          // !Row 1 - TitleImage Component //
           <TitleImage
             titleText={`Transforming Visions Into Digital Reality`}
             imageSrc={`../img/home-page/home-page-mock-up.svg`}
           />
 
-          // !Row 2 TitleCarousel Component (normal) //
-
-          // !Row 3 TitleCarousel Component (row-reverse) //
-
-          // !Row 4 Title Carousel Component (normal) //
-
         } />
+
+          {/* // !Row 2 TitleCarousel Component (normal) // */}
+        <RowSectionContainer jsxContent={
+          <></>
+        } />
+
+          {/* // !Row 3 TitleCarousel Component (row-reverse) // */}
+        <RowSectionContainer jsxContent={
+          <></>
+        } />
+
+          {/* // !Row 4 Title Carousel Component (normal) // */}
+        <RowSectionContainer jsxContent={
+          <></>
+        } />
+
       </main>
     </>
   );
