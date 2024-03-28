@@ -28,7 +28,7 @@ export default function TitleCarousel({ titleText, images, disclaimerText, rever
                 setTriggerAnimation('animate__animated animate__fadeInRight');
                 setCurrentImageIndex(newIndex);
             }, 1001);
-        }, 15000);
+        }, 8000);
 
         return () => {
             clearInterval(intervalId);
@@ -81,11 +81,13 @@ export default function TitleCarousel({ titleText, images, disclaimerText, rever
             {/* Carousel */}
             <div className={`column`}>
                 <div className={styles.carousel}>
+
                     <button
                         className={styles.btn}
                         onClick={prevSlide}>
                         <CarbonPreviousFilled />
                     </button>
+
                     {
                         nextState ?
 
@@ -103,11 +105,13 @@ export default function TitleCarousel({ titleText, images, disclaimerText, rever
                                 alt={`Image ${currentImageIndex + 1}`}
                             />
                     }
+
                     <button
                         className={styles.btn}
                         onClick={nextSlide}>
                         <CarbonNextFilled />
                     </button>
+                    
                 </div>
             </div>
 
