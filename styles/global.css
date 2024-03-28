@@ -48,3 +48,6 @@ body {
 .mainText {
   font-family: var(--main-text);
 }
+.subText {
+  font-family: var(--sub-text);
+}

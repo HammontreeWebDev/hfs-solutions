@@ -1,4 +1,7 @@
 .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
     width: 100vw;
     height: 430px;
     position: relative;
@@ -6,7 +9,9 @@
 
 .leftImage {
     z-index: 1;
-    position: relative;
+    position: absolute;
+    top: 0%;
+    left: 0%;
     width: 30vw;
     height: auto;
 }
@@ -17,4 +22,20 @@
     top: 0%;
     width: 72vw;
     height: auto;
+}
+
+.navRow {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 3vh;
+    width: 70vw;
+    max-height: auto;
+    z-index: 2;
+}
+
+.navLink {
+    text-decoration: none;
+    color: white;
 }
