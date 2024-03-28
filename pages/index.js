@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css';
 import Header from '../components/Header';
 import RowSectionContainer from '../components/RowSectionContainer';
 import TitleImage from '../components/TitleImage';
+import TitleCarousel from '../components/TitleCarousel';
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
 
           {/* // !Row 2 TitleCarousel Component (normal) // */}
         <RowSectionContainer jsxContent={
-          <></>
+          <TitleCarousel images={['../img/home-page/MongoDB.svg','../img/home-page/ExpressJS.svg','../img/home-page/ReactJS.svg','../img/home-page/NodeJS.svg','../img/home-page/Apollo.svg','../img/home-page/GraphQL.svg']}/>
         } />
 
           {/* // !Row 3 TitleCarousel Component (row-reverse) // */}
