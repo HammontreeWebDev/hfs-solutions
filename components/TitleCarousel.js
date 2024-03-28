@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from '../styles/TitleCarousel.module.css';
 
-export default function TitleCarousel({ titleText, images, disclaimerText }) {
+export default function TitleCarousel({ titleText, images, disclaimerText, reverseText }) {
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -33,10 +33,10 @@ export default function TitleCarousel({ titleText, images, disclaimerText }) {
 
             {/* Title and sub-text */}
             <div className={`column`}>
-                <div className={`${styles.topContainer} titleText`}>
+                <div className={`${styles.topContainer} titleText ${reverseText}`}>
                     <h1>{titleText}</h1>
                 </div>
-                <div className={`${styles.bottomContainer} disclaimerText`}>
+                <div className={`${styles.bottomContainer} disclaimerText ${reverseText}`}>
                     <p>{disclaimerText}</p>
                 </div>
 

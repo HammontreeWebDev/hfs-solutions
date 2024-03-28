@@ -1,0 +1,7 @@
+.rowReverse {
+    flex-direction: row-reverse;
+}
+
+.reverseText {
+    text-align: left;
+}
