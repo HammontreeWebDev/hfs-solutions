@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Header from "../components/Header";
 
 
 export default function Contact() {
@@ -10,8 +9,6 @@ export default function Contact() {
             <Head>
                 <title>Contact | Kaileb Hammontree</title>
             </Head>
-
-            <Header />
 
             <main>
 
