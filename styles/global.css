@@ -69,3 +69,9 @@ main {
   font-size: 80px;
   line-height: normal;
 }
+.disclaimerText{
+  font-family: var(--main-text);
+  color: var(--primary5);
+  font-size: 40px;
+  line-height: normal;
+}

@@ -15,7 +15,7 @@ export default function Home() {
       <Header />
       <main>
 
-      {/* // !Row 1 - TitleImage Component // */}
+        {/* // !Row 1 - TitleImage Component // */}
         <RowSectionContainer jsxContent={
 
           <TitleImage
@@ -25,19 +25,31 @@ export default function Home() {
 
         } />
 
-          {/* // !Row 2 TitleCarousel Component (normal) // */}
+        {/* // !Row 2 TitleCarousel Component (normal) // */}
         <RowSectionContainer jsxContent={
-          <TitleCarousel images={['../img/home-page/MongoDB.svg','../img/home-page/ExpressJS.svg','../img/home-page/ReactJS.svg','../img/home-page/NodeJS.svg','../img/home-page/Apollo.svg','../img/home-page/GraphQL.svg']}/>
+          <TitleCarousel
+            images={['../img/home-page/MongoDB.svg', '../img/home-page/ExpressJS.svg', '../img/home-page/ReactJS.svg', '../img/home-page/NodeJS.svg', '../img/home-page/Apollo.svg', '../img/home-page/GraphQL.svg']}
+            titleText={`Full-Stack Web Development`}
+            disclaimerText={`For websites and applications that require dynamic and flexible data retrieval`}
+          />
         } />
 
-          {/* // !Row 3 TitleCarousel Component (row-reverse) // */}
+        {/* // !Row 3 TitleCarousel Component (row-reverse) // */}
         <RowSectionContainer jsxContent={
-          <></>
+          <TitleCarousel
+            images={['../img/home-page/MongoDB.svg', '../img/home-page/ExpressJS.svg', '../img/home-page/ReactJS.svg', '../img/home-page/NodeJS.svg', '../img/home-page/Apollo.svg', '../img/home-page/GraphQL.svg']}
+            titleText={`Full-Stack Web Development`}
+            disclaimerText={`For websites and applications that require dynamic and flexible data retrieval`}
+          />
         } />
 
-          {/* // !Row 4 Title Carousel Component (normal) // */}
+        {/* // !Row 4 Title Carousel Component (normal) // */}
         <RowSectionContainer jsxContent={
-          <></>
+          <TitleCarousel
+            images={['../img/home-page/MongoDB.svg', '../img/home-page/ExpressJS.svg', '../img/home-page/ReactJS.svg', '../img/home-page/NodeJS.svg', '../img/home-page/Apollo.svg', '../img/home-page/GraphQL.svg']}
+            titleText={`Full-Stack Web Development`}
+            disclaimerText={`For websites and applications that require dynamic and flexible data retrieval`}
+          />
         } />
 
       </main>
