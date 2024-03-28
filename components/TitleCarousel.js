@@ -4,12 +4,29 @@ import styles from '../styles/TitleCarousel.module.css';
 export default function TitleCarousel({ titleText, images, disclaimerText, reverseText }) {
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [triggerAnimation, setTriggerAnimation] = useState('');
+    const [nextState, setNextState] = useState(false);
 
     useEffect(() => {
         const intervalId = setInterval(() => {
-            const newIndex = (currentImageIndex + 1) % images.length;
-            setCurrentImageIndex(newIndex);
-        }, 5000);
+            setNextState(true);
+
+            setTimeout(() => {
+                setNextState(false);
+                setTriggerAnimation('animate__animated animate__fadeOutLeft');
+            }, 1);
+
+            setTimeout(() => {
+                setNextState(true);
+            }, 1000);
+
+            setTimeout(() => {
+                setNextState(false);
+                const newIndex = (currentImageIndex - 1 + images.length) % images.length;
+                setTriggerAnimation('animate__animated animate__fadeInRight');
+                setCurrentImageIndex(newIndex);
+            }, 1001);
+        }, 15000);
 
         return () => {
             clearInterval(intervalId);
@@ -17,13 +34,43 @@ export default function TitleCarousel({ titleText, images, disclaimerText, rever
     }, [currentImageIndex, images]);
 
     const nextSlide = () => {
-        const newIndex = (currentImageIndex + 1) % images.length;
-        setCurrentImageIndex(newIndex);
+        setNextState(true);
+
+        setTimeout(() => {
+            setNextState(false);
+            setTriggerAnimation('animate__animated animate__fadeOutLeft');
+        }, 1);
+
+        setTimeout(() => {
+            setNextState(true);
+        }, 1000);
+
+        setTimeout(() => {
+            setNextState(false);
+            const newIndex = (currentImageIndex - 1 + images.length) % images.length;
+            setTriggerAnimation('animate__animated animate__fadeInRight');
+            setCurrentImageIndex(newIndex);
+        }, 1001);
     };
 
     const prevSlide = () => {
-        const newIndex = (currentImageIndex - 1 + images.length) % images.length;
-        setCurrentImageIndex(newIndex);
+        setNextState(true);
+
+        setTimeout(() => {
+            setNextState(false);
+            setTriggerAnimation('animate__animated animate__fadeOutRight');
+        }, 1);
+
+        setTimeout(() => {
+            setNextState(true);
+        }, 1000);
+
+        setTimeout(() => {
+            setNextState(false);
+            const newIndex = (currentImageIndex - 1 + images.length) % images.length;
+            setTriggerAnimation('animate__animated animate__fadeInLeft');
+            setCurrentImageIndex(newIndex);
+        }, 1001);
     };
 
     return (
@@ -33,12 +80,25 @@ export default function TitleCarousel({ titleText, images, disclaimerText, rever
             <div className={`column`}>
                 <div className={styles.carousel}>
                     <button className={styles.btn} onClick={prevSlide}>Previous</button>
-                    <img
-                        className={styles.image}
-                        src={images[currentImageIndex]}
-                        alt={`Image ${currentImageIndex + 1}`}
-                    />
-                    <button className={styles.btn} onClick={nextSlide}>Next</button>
+                    {
+                        nextState ?
+
+                            <img
+                                className={styles.hidden}
+                                src={images[currentImageIndex]}
+                                alt={`Image ${currentImageIndex + 1}`}
+                            />
+
+                            :
+
+                            <img
+                                className={`${styles.image} ${triggerAnimation}`}
+                                src={images[currentImageIndex]}
+                                alt={`Image ${currentImageIndex + 1}`}
+                            />
+                    }
+                    <button className={styles.btn}
+                        onClick={nextSlide}>Next</button>
                 </div>
             </div>
 

@@ -34,3 +34,11 @@
     cursor: pointer;
     color: var(--primary5);
 }
+
+.hidden {
+    display: none;
+}
+
+.notHidden {
+    display: block;
+}

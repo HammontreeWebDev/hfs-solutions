@@ -3,6 +3,7 @@
 import Head from "next/head";
 import Header from "../components/Header";
 import "../styles/global.css";
+import "animate.css";
 
 // import fonts from next/font/google to avoid making requests from google
 import { Architects_Daughter } from 'next/font/google';
