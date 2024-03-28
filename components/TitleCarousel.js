@@ -21,13 +21,13 @@ export default function TitleCarousel({ titleText, images, disclaimerText, rever
             {/* Carousel */}
             <div className={`column`}>
                 <div className={styles.carousel}>
-                    <button onClick={prevSlide}>Previous</button>
+                    <button className={styles.btn} onClick={prevSlide}>Previous</button>
                     <img
                         className={styles.image}
                         src={images[currentImageIndex]}
                         alt={`Image ${currentImageIndex + 1}`}
                     />
-                    <button onClick={nextSlide}>Next</button>
+                    <button className={styles.btn} onClick={nextSlide}>Next</button>
                 </div>
             </div>
 

@@ -9,3 +9,28 @@
     width: auto;
     text-align: right;
 }
+
+.carousel{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: auto;
+}
+
+.image{
+    height: auto;
+    width: 100%;
+}
+
+.btn {
+    background-color: transparent;
+    border: transparent;
+    font-family: var(--main-text);
+    color: white;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: var(--primary5);
+}
