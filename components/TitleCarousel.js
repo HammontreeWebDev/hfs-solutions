@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import styles from '../styles/TitleCarousel.module.css';
+import { CarbonNextFilled } from './Icons/CarbonNextFilled';
+import { CarbonPreviousFilled } from './Icons/CarbonPreviousFilled';
 
 export default function TitleCarousel({ titleText, images, disclaimerText, reverseText }) {
 
@@ -79,7 +81,11 @@ export default function TitleCarousel({ titleText, images, disclaimerText, rever
             {/* Carousel */}
             <div className={`column`}>
                 <div className={styles.carousel}>
-                    <button className={styles.btn} onClick={prevSlide}>Previous</button>
+                    <button
+                        className={styles.btn}
+                        onClick={prevSlide}>
+                        <CarbonPreviousFilled />
+                    </button>
                     {
                         nextState ?
 
@@ -97,8 +103,11 @@ export default function TitleCarousel({ titleText, images, disclaimerText, rever
                                 alt={`Image ${currentImageIndex + 1}`}
                             />
                     }
-                    <button className={styles.btn}
-                        onClick={nextSlide}>Next</button>
+                    <button
+                        className={styles.btn}
+                        onClick={nextSlide}>
+                        <CarbonNextFilled />
+                    </button>
                 </div>
             </div>
 
