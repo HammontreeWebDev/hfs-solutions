@@ -47,8 +47,8 @@ export default function Home() {
         <RowSectionContainer jsxContent={
           <TitleCarousel
             images={['../img/home-page/MongoDB.svg', '../img/home-page/ExpressJS.svg', '../img/home-page/ReactJS.svg', '../img/home-page/NodeJS.svg', '../img/home-page/Apollo.svg', '../img/home-page/GraphQL.svg']}
-            titleText={`Full-Stack Web Development`}
-            disclaimerText={`For websites and applications that require dynamic and flexible data retrieval`}
+            titleText={`Additional Tools`}
+            disclaimerText={`Additional technology to suit your needs`}
           />
         } />
 
