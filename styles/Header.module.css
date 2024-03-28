@@ -7,10 +7,14 @@
 .leftImage {
     z-index: 1;
     position: relative;
+    width: 30vw;
+    height: auto;
 }
 
 .vector {
     position: absolute;
     right: 0%;
     top: 0%;
+    width: 72vw;
+    height: auto;
 }
