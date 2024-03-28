@@ -56,3 +56,13 @@ main {
 .subText {
   font-family: var(--sub-text);
 }
+.column {
+  width: 49%;
+  height: 100%;
+}
+.titleText {
+  font-family: var(--main-text);
+  color: white;
+  font-size: 100px;
+  line-height: normal;
+}

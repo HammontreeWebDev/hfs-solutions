@@ -6,12 +6,12 @@ export default function TitleImage(props) {
         <>
 
             {/* Left Side: Title Text */}
-            <div className={styles.column}>
-
+            <div className={`column titleText`}>
+                <h1> {props.titleText} </h1>
             </div>
 
             {/* Right Side: Image */}
-            <div className={styles.column}>
+            <div className={`column`}>
 
             </div>
 

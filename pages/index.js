@@ -15,8 +15,10 @@ export default function Home() {
       <main>
         <RowSectionContainer jsxContent={
 
-          <TitleImage />
-          
+          <TitleImage
+            titleText={`Transforming Visions Into Digital Reality`}
+          />
+
         } />
       </main>
     </>
