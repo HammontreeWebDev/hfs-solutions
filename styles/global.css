@@ -44,6 +44,11 @@ body {
     sans-serif;
 }
 
+main {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
 /* global class to avoid renaming the class in every single css sheet */
 .mainText {
   font-family: var(--main-text);
