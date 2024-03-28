@@ -1,6 +1,7 @@
 // TODO: Use Material UI's Skeleton Component and wrap various things as a loading div
 
 import Head from "next/head";
+import Header from "../components/Header";
 import "../styles/global.css";
 
 // import fonts from next/font/google to avoid making requests from google
@@ -38,6 +39,7 @@ const App = ({ Component, pageProps }) => {
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
+            <Header />
                 <Component {...pageProps} />
         </>
     )
