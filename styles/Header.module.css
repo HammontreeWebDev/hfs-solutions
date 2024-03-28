@@ -1,4 +1,16 @@
 .container {
     width: 100vw;
-    height: 39.8vh;
+    height: 430px;
+    position: relative;
+}
+
+.leftImage {
+    z-index: 1;
+    position: relative;
+}
+
+.vector {
+    position: absolute;
+    right: 0%;
+    top: 0%;
 }
