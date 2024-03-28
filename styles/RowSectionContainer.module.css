@@ -1,0 +1,5 @@
+.container{
+    width: 91vw;
+    height: 92.5vh;
+    flex-shrink: 0;
+}
