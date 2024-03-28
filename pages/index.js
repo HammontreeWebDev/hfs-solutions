@@ -2,6 +2,7 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Header from '../components/Header';
 import RowSectionContainer from '../components/RowSectionContainer';
+import TitleImage from '../components/TitleImage';
 
 export default function Home() {
   return (
@@ -14,7 +15,8 @@ export default function Home() {
       <main>
         <RowSectionContainer jsxContent={
 
-          <p>This is test text</p>
+          <TitleImage />
+          
         } />
       </main>
     </>
