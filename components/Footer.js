@@ -5,9 +5,10 @@ import Link from "next/link";
 export default function Footer() {
     return (
         <footer className={styles.container}>
-            <div className={styles.row}>
+              {/* background image */}
 
-                {/* insert image here */}
+                <Image className={styles.vector} src={'../img/Footer/footer.svg'} width={1920} height={430} alt={'background image'} />
+            <div className={styles.row}>
 
                 <div className={styles.footerColumn1}>
                     <p className={styles.footerText}>
