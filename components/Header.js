@@ -3,6 +3,7 @@ import Link from 'next/link';
 import styles from '../styles/Header.module.css';
 import Image from 'next/image';
 import { LineMdCloseToMenuTransition } from './Icons/Menu';
+import { LineMdMenuToCloseTransition } from './Icons/CloseMenu';
 
 export default function Header() {
 
@@ -57,11 +58,58 @@ export default function Header() {
 
                         {mobileMenu ?
                             <div className={styles.mobileMenu}>
-                                <Link className={`${styles.navLink} subText`} href='/'>Home</Link>
-                                <Link className={`${styles.navLink} subText`} href='/biography'>Biography</Link>
-                                <Link className={`${styles.navLink} subText`} href='/contact'>Contact</Link>
-                                <Link className={`${styles.navLink} subText`} href='/portfolio'>Portfolio</Link>
-                                <Link className={`${styles.navLink} subText`} href='/certifications'>Certifications</Link>
+
+                                <div className={styles.mobileRow}>
+
+                                    <button
+                                        className={styles.mobileMenuToggle}
+                                        onClick={() => mobileMenuOff()}
+                                    >
+                                        <LineMdMenuToCloseTransition />
+                                    </button>
+
+                                </div>
+
+                                <Link
+                                    className={`${styles.navLink} subText`}
+                                    href='/'
+                                    onClick={mobileMenuOff}
+                                >
+                                    Home
+                                </Link>
+
+                                <Link
+                                    className={`${styles.navLink} subText`}
+                                    href='/biography'
+                                    onClick={mobileMenuOff}
+                                >
+                                    Biography
+                                </Link>
+
+                                <Link
+                                    className={`${styles.navLink} subText`}
+                                    href='/contact'
+                                    onClick={mobileMenuOff}
+                                >
+                                    Contact
+                                </Link>
+
+                                <Link
+                                    className={`${styles.navLink} subText`}
+                                    href='/portfolio'
+                                    onClick={mobileMenuOff}
+                                >
+                                    Portfolio
+                                </Link>
+
+                                <Link
+                                    className={`${styles.navLink} subText`}
+                                    href='/certifications'
+                                    onClick={mobileMenuOff}
+                                >
+                                    Certifications
+                                </Link>
+
                             </div>
 
                             :

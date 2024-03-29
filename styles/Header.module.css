@@ -65,7 +65,7 @@
     height: 100vh;
     width: 100vw;
     z-index: 100;
-    background-color: pink;
+    background-color: var(--alt4);
     position: fixed;
 }
 
