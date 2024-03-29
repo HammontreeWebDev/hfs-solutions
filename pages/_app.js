@@ -2,6 +2,7 @@
 
 import Head from "next/head";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import "../styles/global.css";
 import "animate.css";
 
@@ -41,7 +42,8 @@ const App = ({ Component, pageProps }) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
             <Header />
-                <Component {...pageProps} />
+            <Component {...pageProps} />
+            <Footer />
         </>
     )
 };
