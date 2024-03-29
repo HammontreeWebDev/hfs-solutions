@@ -41,3 +41,19 @@
 .notHidden {
     display: block;
 }
+
+/* change css for 1235px */
+
+@media screen and (max-width: 1235px) {
+    .topContainer, .bottomContainer {
+        text-align: center;
+    }
+
+    .image {
+        max-width: 70vw;
+    }
+
+    .btn {
+        display: none;
+    }
+}
