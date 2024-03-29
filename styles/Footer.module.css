@@ -10,7 +10,7 @@
 .vector{
     position: absolute;
     right: 0%;
-    top: 0%;
+    bottom: 0%;
     width: 100vw;
     height: 100%;
     z-index: 0;
@@ -63,4 +63,59 @@
 .navLink {
     text-decoration: none;
     color: white;
+}
+
+@media screen and (max-width: 1235px) {
+    .logo {
+        height: 3rem;
+        width: auto;
+    }
+
+    .subRow {
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0%;
+        padding-bottom: 0%;
+    }
+
+    .footerColumn2 {
+        flex-direction: row;
+        padding-bottom: 1%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .container{
+        height: 100vh;
+    }
+    .row {
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .footerColumn1{
+        width: 100%;
+        height: 25%;
+    }
+    .footerColumn2{
+        width: 100%;
+        height: 30%;
+    }
+    .vector {
+        height: 80%;
+        width: 200%;
+        justify-self: flex-end;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footerColumn2 {
+        flex-direction: column;
+        height: 50%;
+    }
+    .vector {
+        height: 100%;
+        width: 650%;
+    }
 }
