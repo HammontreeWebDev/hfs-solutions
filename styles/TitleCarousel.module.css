@@ -27,12 +27,10 @@
     background-color: transparent;
     border: transparent;
     font-family: var(--main-text);
-    color: white;
 }
 
 .btn:hover {
     cursor: pointer;
-    color: var(--primary5);
 }
 
 .hidden {

@@ -1,7 +1,3 @@
 .btnStyle{
     font-size: 60px;
 }
-
-svg .btnStyle:hover {
-    fill: red;
-}
