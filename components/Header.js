@@ -7,6 +7,7 @@ import { LineMdCloseToMenuTransition } from './Icons/Menu';
 export default function Header() {
 
     const [isMobileDevice, setIsMobileDevice] = useState(false);
+    const [mobileMenu, setMobileMenu] = useState(false);
 
     useEffect(() => {
         function handleResize() {
@@ -24,6 +25,16 @@ export default function Header() {
 
     }, []);
 
+
+    const mobileMenuOn = () => {
+        setMobileMenu(true);
+    };
+
+    const mobileMenuOff = () => {
+        setMobileMenu(false);
+    };
+
+
     return (
         // classname for dimension specifications
         <header className={styles.container}>
@@ -31,13 +42,34 @@ export default function Header() {
             <Image className={styles.vector} src='../img/Header/header-vector.svg' width={1376} height={130} />
             {
                 isMobileDevice ?
-                    <div className={styles.mobileRow}>
 
-                        <button className={styles.mobileMenuToggle}>
-                            <LineMdCloseToMenuTransition />
-                        </button>
+                    <>
+                        <div className={styles.mobileRow}>
 
-                    </div>
+                            <button
+                                className={styles.mobileMenuToggle}
+                                onClick={() => mobileMenuOn()}
+                            >
+                                <LineMdCloseToMenuTransition />
+                            </button>
+
+                        </div>
+
+                        {mobileMenu ?
+                            <div className={styles.mobileMenu}>
+                                <Link className={`${styles.navLink} subText`} href='/'>Home</Link>
+                                <Link className={`${styles.navLink} subText`} href='/biography'>Biography</Link>
+                                <Link className={`${styles.navLink} subText`} href='/contact'>Contact</Link>
+                                <Link className={`${styles.navLink} subText`} href='/portfolio'>Portfolio</Link>
+                                <Link className={`${styles.navLink} subText`} href='/certifications'>Certifications</Link>
+                            </div>
+
+                            :
+
+                            ''
+                        }
+
+                    </>
 
                     :
 
