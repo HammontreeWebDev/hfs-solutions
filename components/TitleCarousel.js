@@ -7,8 +7,9 @@ export default function TitleCarousel({ titleText, images, disclaimerText, rever
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [triggerAnimation, setTriggerAnimation] = useState('');
+    const [btnAnimation, setBtnAnimation] = useState('');
     const [nextState, setNextState] = useState(false);
-    
+
     // use this state to track whether the next and prev buttons are hovered so that you can pause the auto transitions
     const [isHovered, setIsHovered] = useState(false);
 
@@ -20,6 +21,7 @@ export default function TitleCarousel({ titleText, images, disclaimerText, rever
                 setTimeout(() => {
                     setNextState(false);
                     setTriggerAnimation('animate__animated animate__fadeOutLeft');
+                    setBtnAnimation('animate__animated animate__fadeOut');
                 }, 1);
 
                 setTimeout(() => {
@@ -30,6 +32,7 @@ export default function TitleCarousel({ titleText, images, disclaimerText, rever
                     setNextState(false);
                     const newIndex = (currentImageIndex - 1 + images.length) % images.length;
                     setTriggerAnimation('animate__animated animate__fadeInRight');
+                    setBtnAnimation('animate__animated animate__fadeIn');
                     setCurrentImageIndex(newIndex);
                 }, 1001);
             }
@@ -50,6 +53,7 @@ export default function TitleCarousel({ titleText, images, disclaimerText, rever
         setTimeout(() => {
             setNextState(false);
             setTriggerAnimation('animate__animated animate__fadeOutLeft');
+            setBtnAnimation('animate__animated animate__fadeOut');
         }, 1);
 
         setTimeout(() => {
@@ -60,6 +64,7 @@ export default function TitleCarousel({ titleText, images, disclaimerText, rever
             setNextState(false);
             const newIndex = (currentImageIndex - 1 + images.length) % images.length;
             setTriggerAnimation('animate__animated animate__fadeInRight');
+            setBtnAnimation('animate__animated animate__fadeIn');
             setCurrentImageIndex(newIndex);
         }, 1001);
     };
@@ -70,6 +75,7 @@ export default function TitleCarousel({ titleText, images, disclaimerText, rever
         setTimeout(() => {
             setNextState(false);
             setTriggerAnimation('animate__animated animate__fadeOutRight');
+            setBtnAnimation('animate__animated animate__fadeOut');
         }, 1);
 
         setTimeout(() => {
@@ -80,6 +86,7 @@ export default function TitleCarousel({ titleText, images, disclaimerText, rever
             setNextState(false);
             const newIndex = (currentImageIndex - 1 + images.length) % images.length;
             setTriggerAnimation('animate__animated animate__fadeInLeft');
+            setBtnAnimation('animate__animated animate__fadeIn')
             setCurrentImageIndex(newIndex);
         }, 1001);
     };
@@ -91,42 +98,57 @@ export default function TitleCarousel({ titleText, images, disclaimerText, rever
             <div className={`column`}>
                 <div className={styles.carousel}>
 
-                    <button
-                        className={styles.btn}
-                        onClick={prevSlide}
-                        onMouseEnter={() => handleHover(true)}
-                        onMouseLeave={() => handleHover(false)}
-                    >
-                        <CarbonPreviousFilled />
-                    </button>
-
                     {
                         nextState ?
-
-                            <img
-                                className={styles.hidden}
-                                src={images[currentImageIndex]}
-                                alt={`Image ${currentImageIndex + 1}`}
-                            />
+                            <>
+                                <button
+                                    className={styles.hidden}
+                                    onClick={prevSlide}
+                                    onMouseEnter={() => handleHover(true)}
+                                    onMouseLeave={() => handleHover(false)}
+                                >
+                                    <CarbonPreviousFilled />
+                                </button>
+                                <img
+                                    className={styles.hidden}
+                                    src={images[currentImageIndex]}
+                                    alt={`Image ${currentImageIndex + 1}`}
+                                />
+                                <button
+                                    className={styles.hidden}
+                                    onClick={nextSlide}
+                                    onMouseEnter={() => handleHover(true)}
+                                    onMouseLeave={() => handleHover(false)}
+                                >
+                                    <CarbonNextFilled />
+                                </button>
+                            </>
 
                             :
-
-                            <img
-                                className={`${styles.image} ${triggerAnimation}`}
-                                src={images[currentImageIndex]}
-                                alt={`Image ${currentImageIndex + 1}`}
-                            />
+                            <>
+                                <button
+                                    className={`${styles.btn} ${btnAnimation}`}
+                                    onClick={prevSlide}
+                                    onMouseEnter={() => handleHover(true)}
+                                    onMouseLeave={() => handleHover(false)}
+                                >
+                                    <CarbonPreviousFilled />
+                                </button>
+                                <img
+                                    className={`${styles.image} ${triggerAnimation}`}
+                                    src={images[currentImageIndex]}
+                                    alt={`Image ${currentImageIndex + 1}`}
+                                />
+                                <button
+                                    className={`${styles.btn} ${btnAnimation}`}
+                                    onClick={nextSlide}
+                                    onMouseEnter={() => handleHover(true)}
+                                    onMouseLeave={() => handleHover(false)}
+                                >
+                                    <CarbonNextFilled />
+                                </button>
+                            </>
                     }
-
-                    <button
-                        className={styles.btn}
-                        onClick={nextSlide}
-                        onMouseEnter={() => handleHover(true)}
-                        onMouseLeave={() => handleHover(false)}
-                    >
-                        <CarbonNextFilled />
-                    </button>
-
                 </div>
             </div>
 
