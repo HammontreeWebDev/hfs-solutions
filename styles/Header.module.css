@@ -47,6 +47,16 @@
     z-index: 2;
 }
 
+.mobileMenuToggle{
+    border: transparent;
+    background-color: transparent;
+}
+
+/* for small laptops or tablets that use a mouse */
+.mobileMenuToggle:hover{
+    cursor: pointer;
+}
+
 .navLink {
     text-decoration: none;
     color: white;
