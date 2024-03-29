@@ -55,36 +55,39 @@
 @media screen and (max-width: 1235px) {
 
     .vector{
-        height: 40%;
+        height: 50%;
         width: 80%;
+    }
+
+    .container {
+        height: 25vh;
     }
 }
 
 @media screen and (max-width: 920px) {
-
-    .vector{
-        height: 35%;
+    .leftImage {
+        width: 40vw;
     }
 }
 
 @media screen and (max-width: 670px) {
 
     .vector{
-        height: 30%;
+        height: 60%;
     }
 }
 
 @media screen and (max-width: 590px) {
 
     .vector{
-        height: 25%;
+        height: 55%;
     }
 }
 
 @media screen and (max-width: 481px) {
 
     .vector{
-        height: 20%;
+        height: 40%;
     }
 }
 
@@ -92,13 +95,17 @@
 
     .vector{
         width: 100%;
-        height: 12%;
+        height: 35%;
+    }
+
+    .leftImage {
+        width: 50vw;
     }
 }
 
 @media screen and (max-width: 280px) {
 
     .vector{
-        height: 10%;
+        height: 40%;
     }
 }
