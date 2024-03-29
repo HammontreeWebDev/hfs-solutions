@@ -28,7 +28,7 @@ export default function TitleCarousel({ titleText, images, disclaimerText, rever
                 setTriggerAnimation('animate__animated animate__fadeInRight');
                 setCurrentImageIndex(newIndex);
             }, 1001);
-        }, 8000);
+        }, 5000);
 
         return () => {
             clearInterval(intervalId);
