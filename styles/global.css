@@ -76,3 +76,26 @@ main {
   font-size: 30px;
   line-height: normal;
 }
+
+/* media queries */
+
+/* change text sizes to gradually get smaller */
+@media screen and (max-width: 1404px) {
+  .titleText { 
+    font-size: 50px;
+  }
+
+  .disclaimerText {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1235px) {
+  .titleText { 
+    font-size: 40px;
+  }
+
+  .disclaimerText {
+    font-size: 20px;
+  }
+}
