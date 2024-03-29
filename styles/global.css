@@ -106,3 +106,9 @@ main {
     margin-top: 5%;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .titleText {
+    font-size: 30px
+  }
+}
