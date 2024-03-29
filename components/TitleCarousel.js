@@ -8,32 +8,41 @@ export default function TitleCarousel({ titleText, images, disclaimerText, rever
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [triggerAnimation, setTriggerAnimation] = useState('');
     const [nextState, setNextState] = useState(false);
+    
+    // use this state to track whether the next and prev buttons are hovered so that you can pause the auto transitions
+    const [isHovered, setIsHovered] = useState(false);
 
     useEffect(() => {
         const intervalId = setInterval(() => {
-            setNextState(true);
-
-            setTimeout(() => {
-                setNextState(false);
-                setTriggerAnimation('animate__animated animate__fadeOutLeft');
-            }, 1);
-
-            setTimeout(() => {
+            if (!isHovered) {
                 setNextState(true);
-            }, 1000);
 
-            setTimeout(() => {
-                setNextState(false);
-                const newIndex = (currentImageIndex - 1 + images.length) % images.length;
-                setTriggerAnimation('animate__animated animate__fadeInRight');
-                setCurrentImageIndex(newIndex);
-            }, 1001);
+                setTimeout(() => {
+                    setNextState(false);
+                    setTriggerAnimation('animate__animated animate__fadeOutLeft');
+                }, 1);
+
+                setTimeout(() => {
+                    setNextState(true);
+                }, 1000);
+
+                setTimeout(() => {
+                    setNextState(false);
+                    const newIndex = (currentImageIndex - 1 + images.length) % images.length;
+                    setTriggerAnimation('animate__animated animate__fadeInRight');
+                    setCurrentImageIndex(newIndex);
+                }, 1001);
+            }
         }, 5000);
 
         return () => {
             clearInterval(intervalId);
         };
-    }, [currentImageIndex, images]);
+    }, [currentImageIndex, images, isHovered]);
+
+    const handleHover = (hovered) => {
+        setIsHovered(hovered);
+    }
 
     const nextSlide = () => {
         setNextState(true);
@@ -84,7 +93,10 @@ export default function TitleCarousel({ titleText, images, disclaimerText, rever
 
                     <button
                         className={styles.btn}
-                        onClick={prevSlide}>
+                        onClick={prevSlide}
+                        onMouseEnter={() => handleHover(true)}
+                        onMouseLeave={() => handleHover(false)}
+                    >
                         <CarbonPreviousFilled />
                     </button>
 
@@ -108,10 +120,13 @@ export default function TitleCarousel({ titleText, images, disclaimerText, rever
 
                     <button
                         className={styles.btn}
-                        onClick={nextSlide}>
+                        onClick={nextSlide}
+                        onMouseEnter={() => handleHover(true)}
+                        onMouseLeave={() => handleHover(false)}
+                    >
                         <CarbonNextFilled />
                     </button>
-                    
+
                 </div>
             </div>
 
