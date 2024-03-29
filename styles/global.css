@@ -112,3 +112,9 @@ main {
     font-size: 30px
   }
 }
+
+@media screen and (max-width: 280px) {
+  .titleText {
+    font-size: 25px
+  }
+}

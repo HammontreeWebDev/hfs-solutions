@@ -35,7 +35,70 @@
     z-index: 2;
 }
 
+.mobileRow {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1%;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    width: 72vw;
+    height: auto;
+    z-index: 2;
+}
+
 .navLink {
     text-decoration: none;
     color: white;
+}
+
+@media screen and (max-width: 1235px) {
+
+    .vector{
+        height: 40%;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 920px) {
+
+    .vector{
+        height: 35%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+
+    .vector{
+        height: 30%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+
+    .vector{
+        height: 25%;
+    }
+}
+
+@media screen and (max-width: 481px) {
+
+    .vector{
+        height: 20%;
+    }
+}
+
+@media screen and (max-width: 355px) {
+
+    .vector{
+        width: 100%;
+        height: 12%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+
+    .vector{
+        height: 10%;
+    }
 }
