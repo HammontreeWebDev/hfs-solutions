@@ -47,13 +47,13 @@
     z-index: 2;
 }
 
-.mobileMenuToggle{
+.mobileMenuToggle {
     border: transparent;
     background-color: transparent;
 }
 
 /* for small laptops or tablets that use a mouse */
-.mobileMenuToggle:hover{
+.mobileMenuToggle:hover {
     cursor: pointer;
 }
 
@@ -69,6 +69,10 @@
     position: fixed;
 }
 
+.mobileTitle {
+    display: none;
+}
+
 .navLink {
     text-decoration: none;
     color: white;
@@ -76,7 +80,7 @@
 
 @media screen and (max-width: 1235px) {
 
-    .vector{
+    .vector {
         height: 50%;
         width: 80%;
     }
@@ -92,42 +96,40 @@
     }
 }
 
-@media screen and (max-width: 670px) {
-
-    .vector{
-        height: 60%;
+@media screen and (max-width: 768px) {
+    .container {
+        height: 80vh;
+        justify-content: center;
+        align-items: flex-start;
     }
-}
 
-@media screen and (max-width: 590px) {
-
-    .vector{
-        height: 55%;
-    }
-}
-
-@media screen and (max-width: 481px) {
-
-    .vector{
-        height: 40%;
-    }
-}
-
-@media screen and (max-width: 355px) {
-
-    .vector{
-        width: 100%;
-        height: 35%;
+    .vector {
+        width: 200%;
+        height: 100%;
     }
 
     .leftImage {
-        width: 50vw;
+        display: none;
+    }
+
+    .mobileTitleContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        width: 100%;
+    }
+
+    .mobileTitle {
+        display: block;
+        z-index: 1;
+        font-family: var(--main-text);
+        text-align: center;
     }
 }
 
-@media screen and (max-width: 280px) {
-
+@media screen and (max-width: 490px){
     .vector{
-        height: 40%;
+        width: 300%;
     }
 }

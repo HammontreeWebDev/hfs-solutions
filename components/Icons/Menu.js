@@ -1,11 +1,12 @@
 import React from 'react';
 
 export function LineMdCloseToMenuTransition(props) {
+    
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="1.5em"
-            height="1.5em"
+            width="2em"
+            height="2em"
             viewBox="0 0 24 24" {...props}
         >
             <g fill="none" stroke="#ffffff" strokeLinecap="round" strokeWidth={2}>

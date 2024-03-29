@@ -41,6 +41,10 @@ export default function Header() {
         <header className={styles.container}>
             <Image className={styles.leftImage} src='../img/Header/hfs-header-left.svg' width={578} height={430} />
             <Image className={styles.vector} src='../img/Header/header-vector.svg' width={1376} height={130} />
+
+            <div className={styles.mobileTitleContainer}>
+                <h1 className={styles.mobileTitle}>Hammontree Full-Stack Solutions LLC</h1>
+            </div>
             {
                 isMobileDevice ?
 
