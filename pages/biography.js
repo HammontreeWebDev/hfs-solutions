@@ -36,7 +36,6 @@ export default function Biography() {
                                                 loop={true}
                                                 typeSpeed={100}
                                                 deleteSpeed={80}
-                                                delaySpeed={2500}
                                             />
                                         </span>
                                     </span>
