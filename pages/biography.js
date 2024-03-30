@@ -31,18 +31,6 @@ export default function Biography() {
                     }
                 />
 
-                {/* // !Row2 - Image Component */}
-
-                <CenterRowSectionContainer
-                    jsxContent={
-                        <ImageComponent
-                            imgSrc={`../img/biography-page/bioTitle.svg`}
-                            imgHeight={1000}
-                            imgWidth={1501}
-                        />
-                    }
-                />
-
                 {/* // !Row3 - Image Component */}
 
                 <CenterRowSectionContainer
