@@ -3,7 +3,7 @@ import styles from "../styles/Biography.module.css";
 import RowSectionContainer from "../components/RowSectionContainer";
 import CenterRowSectionContainer from "../components/CenterRowSectionContainer";
 import TitleImage from "../components/TitleImage";
-import TypeWriter from "../components/TypeWriter";
+import TypeWriterComponent from "../components/TypeWriterComponent";
 
 
 export default function Biography() {
@@ -34,7 +34,7 @@ export default function Biography() {
 
                 <CenterRowSectionContainer
                     jsxContent={
-                        <TypeWriter />
+                        <TypeWriterComponent />
                     }
                 />
 

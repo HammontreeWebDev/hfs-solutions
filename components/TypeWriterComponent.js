@@ -1,7 +1,7 @@
 import styles from "../styles/TypeWriter.module.css";
 import { Typewriter } from "react-simple-typewriter";
 
-export default function TypeWriter(props) {
+export default function TypeWriterComponent(props) {
 
 
 
