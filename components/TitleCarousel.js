@@ -2,7 +2,9 @@ import { useState, useEffect } from 'react';
 import styles from '../styles/TitleCarousel.module.css';
 import { CarbonNextFilled } from './Icons/CarbonNextFilled';
 import { CarbonPreviousFilled } from './Icons/CarbonPreviousFilled';
-import Link from 'next/link';
+
+// TODO: Figure out why there is layout shifts when carousel transitions
+// ! check heights etc. . . 
 
 export default function TitleCarousel({ titleText, images, links, disclaimerText, reverseText }) {
 

@@ -10,16 +10,16 @@
     text-align: right;
 }
 
-.carousel{
+.carousel {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    min-height: 100%;
-    width: auto;
+    height: 92.5vh;
+    width: 100%;
     overflow-x: hidden;
 }
 
-.image{
+.image {
     height: auto;
     width: 100%;
 }
@@ -42,7 +42,9 @@
 /* change css for 1235px */
 
 @media screen and (max-width: 1235px) {
-    .topContainer, .bottomContainer {
+
+    .topContainer,
+    .bottomContainer {
         text-align: center;
     }
 
@@ -52,5 +54,11 @@
 
     .btn {
         display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .carousel {
+        height: 60vh;
     }
 }
