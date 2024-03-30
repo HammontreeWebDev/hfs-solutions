@@ -1,6 +1,8 @@
 import Head from "next/head";
 import RowSectionContainer from "../components/RowSectionContainer";
+import CenterRowSectionContainer from "../components/CenterRowSectionContainer";
 import TitleImage from "../components/TitleImage";
+import ImageComponent from "../components/ImageComponent";
 
 
 export default function Biography() {
@@ -14,7 +16,7 @@ export default function Biography() {
 
             <main>
                 {/* // !Row 1 - TitleImage Component // */}
-                
+
                 <RowSectionContainer
                     jsxContent={
 
@@ -28,6 +30,16 @@ export default function Biography() {
                 />
 
                 {/* // !Row2 - Image Component */}
+
+                <CenterRowSectionContainer
+                    jsxContent={
+                        <ImageComponent
+                            imgSrc={`../img/biography-page/bioTitle.svg`}
+                            imgHeight={1000}
+                            imgWidth={1501}
+                        />
+                    }
+                />
 
                 {/* // !Row3 - Image Component */}
 
