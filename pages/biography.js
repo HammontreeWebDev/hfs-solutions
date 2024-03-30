@@ -1,4 +1,5 @@
 import Head from "next/head";
+import styles from "../styles/Biography.module.css";
 import RowSectionContainer from "../components/RowSectionContainer";
 import CenterRowSectionContainer from "../components/CenterRowSectionContainer";
 import TitleImage from "../components/TitleImage";
@@ -49,6 +50,7 @@ export default function Biography() {
                             imgSrc={`../img/biography-page/bioContent.svg`}
                             imgHeight={1000}
                             imgWidth={1501}
+                            addClass={styles.smallScreenHide}
                         />
                     }
                 />

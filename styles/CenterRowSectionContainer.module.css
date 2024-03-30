@@ -1,9 +1,9 @@
 .container{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     flex-shrink: 0;
 }

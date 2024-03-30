@@ -15,5 +15,6 @@
         flex-flow: column wrap;
         height: auto;
         justify-content: center;
+        width: 100%;
     }
 }
