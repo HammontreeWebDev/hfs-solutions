@@ -4,6 +4,7 @@ import RowSectionContainer from "../components/RowSectionContainer";
 import CenterRowSectionContainer from "../components/CenterRowSectionContainer";
 import TitleImage from "../components/TitleImage";
 import ImageComponent from "../components/ImageComponent";
+import TypeWriter from "../components/TypeWriter";
 
 
 export default function Biography() {
@@ -46,12 +47,7 @@ export default function Biography() {
 
                 <CenterRowSectionContainer
                     jsxContent={
-                        <ImageComponent
-                            imgSrc={`../img/biography-page/bioContent.svg`}
-                            imgHeight={1000}
-                            imgWidth={1501}
-                            addClass={styles.smallScreenHide}
-                        />
+                        <TypeWriter />
                     }
                 />
 

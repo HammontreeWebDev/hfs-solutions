@@ -1,0 +1,23 @@
+.articleContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 1%;
+    background-color: var(--alt4);
+    border-radius: 1rem;
+}
+
+.articleTitle {
+    font-family: var(--main-text);
+    font-size: 35px;
+    color: var(--primary2);
+}
+
+.articleText {
+    font-family: var(--sub-text);
+    font-size: 25px;
+    line-height: 150%;
+}
