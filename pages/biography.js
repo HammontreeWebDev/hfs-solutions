@@ -43,6 +43,16 @@ export default function Biography() {
 
                 {/* // !Row3 - Image Component */}
 
+                <CenterRowSectionContainer
+                    jsxContent={
+                        <ImageComponent
+                            imgSrc={`../img/biography-page/bioContent.svg`}
+                            imgHeight={1000}
+                            imgWidth={1501}
+                        />
+                    }
+                />
+
             </main>
 
         </>

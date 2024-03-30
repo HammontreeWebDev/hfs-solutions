@@ -6,7 +6,7 @@ export default function ImageComponent(props) {
 
         <Image
 
-            className={styles.image}
+            className={`${styles.image} ${props.addClass}`}
             src={props.imgSrc}
             height={props.imgHeight}
             width={props.imgWidth}
