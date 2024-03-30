@@ -4,6 +4,7 @@ import RowSectionContainer from "../components/RowSectionContainer";
 import CenterRowSectionContainer from "../components/CenterRowSectionContainer";
 import TitleImage from "../components/TitleImage";
 import TypeWriterComponent from "../components/TypeWriterComponent";
+import { Typewriter } from "react-simple-typewriter";
 
 
 export default function Biography() {
@@ -26,6 +27,17 @@ export default function Biography() {
                             imgSrc={`../img/biography-page/avatar.svg`}
                             imgHeight={590}
                             imgWidth={574}
+                            jsxContent={
+                                <h6>
+                                    <span className={styles.adjective}>
+                                        <Typewriter
+                                            words={['Owner ', 'Developer ', 'Consultant ', 'Strategist ', 'Student ']}
+                                            loop={true}
+                                        />
+                                    </span>
+                                    | Hammontree Full-Stack Solutions
+                                </h6>
+                            }
                         />
                     }
                 />

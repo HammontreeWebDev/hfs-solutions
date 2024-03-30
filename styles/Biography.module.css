@@ -1,3 +1,7 @@
+.adjective {
+    color: var(--primary5);
+}
+
 @media screen and (max-width: 768px) {
     .smallScreenHide {
         display: none;

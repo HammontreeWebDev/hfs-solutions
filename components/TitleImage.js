@@ -9,6 +9,7 @@ export default function TitleImage(props) {
             {/* Left Side: Title Text */}
             <div className={`column titleText`}>
                 <h1> {props.titleText} </h1>
+                {props.jsxContent}
             </div>
 
             {/* Right Side: Image */}
