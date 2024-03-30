@@ -18,7 +18,9 @@ export default function Home() {
 
           <TitleImage
             titleText={`Transforming Visions Into Digital Reality`}
-            imageSrc={`../img/home-page/home-page-mock-up.svg`}
+            imgSrc={`../img/home-page/home-page-mock-up.svg`}
+            imgHeight={703.125}
+            imgWidth={875}
           />
 
         } />
