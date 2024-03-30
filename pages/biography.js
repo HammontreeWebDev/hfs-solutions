@@ -3,7 +3,6 @@ import styles from "../styles/Biography.module.css";
 import RowSectionContainer from "../components/RowSectionContainer";
 import CenterRowSectionContainer from "../components/CenterRowSectionContainer";
 import TitleImage from "../components/TitleImage";
-import ImageComponent from "../components/ImageComponent";
 import TypeWriter from "../components/TypeWriter";
 
 
