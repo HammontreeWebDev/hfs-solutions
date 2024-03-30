@@ -14,18 +14,17 @@ export default function Biography() {
 
             <main>
                 {/* // !Row 1 - TitleImage Component // */}
-                <RowSectionContainer 
-                jsxContent = {
+                
+                <RowSectionContainer
+                    jsxContent={
 
-                    <TitleImage 
-                    titleText={'Kaileb Hammontree'}
-                    imgSrc={`../img/biography-page/avatar.svg`}
-                    imgHeight={590}
-                    imgWidth={574}
-                    />
-                }
-                
-                
+                        <TitleImage
+                            titleText={'Kaileb Hammontree'}
+                            imgSrc={`../img/biography-page/avatar.svg`}
+                            imgHeight={590}
+                            imgWidth={574}
+                        />
+                    }
                 />
 
                 {/* // !Row2 - Image Component */}
