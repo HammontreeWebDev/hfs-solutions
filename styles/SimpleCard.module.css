@@ -21,3 +21,17 @@
     font-size: 25px;
     line-height: 150%;
 }
+
+.link{
+    font-family: var(--main-text);
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary5);
+    padding: 1%;
+    border-radius: 2rem;
+}
+
+.link:hover{
+    color: var(--primary5);
+    background-color: white;
+}
