@@ -1,0 +1,21 @@
+/* !Override the previous css for the components*/
+.rowReverse {
+    flex-direction: row-reverse!important;
+}
+
+.reverseText {
+    text-align: left!important;
+}
+
+/* reverse the column at 1235px */
+@media screen and (max-width: 1235px) {
+    .columnReverse {
+        flex-direction: column-reverse!important;
+    }
+    .rowReverse {
+        flex-direction: column-reverse!important;
+    }
+    .reverseText {
+        text-align: center!important;
+    }
+}

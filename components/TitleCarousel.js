@@ -2,10 +2,12 @@ import { useState, useEffect } from 'react';
 import styles from '../styles/TitleCarousel.module.css';
 import { CarbonNextFilled } from './Icons/CarbonNextFilled';
 import { CarbonPreviousFilled } from './Icons/CarbonPreviousFilled';
+import Link from 'next/link';
 
-export default function TitleCarousel({ titleText, images, disclaimerText, reverseText }) {
+export default function TitleCarousel({ titleText, images, links, disclaimerText, reverseText }) {
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [currentLinkIndex, setCurrentLinkIndex] = useState(0);
     const [triggerAnimation, setTriggerAnimation] = useState('');
     const [btnAnimation, setBtnAnimation] = useState('');
     const [nextState, setNextState] = useState(false);
@@ -30,10 +32,12 @@ export default function TitleCarousel({ titleText, images, disclaimerText, rever
 
                 setTimeout(() => {
                     setNextState(false);
-                    const newIndex = (currentImageIndex - 1 + images.length) % images.length;
+                    const newIndex = (currentImageIndex + 1 + images.length) % images.length;
+                    const newLink = (currentLinkIndex + 1 + links.length) % links.length;
                     setTriggerAnimation('animate__animated animate__fadeInRight');
                     setBtnAnimation('animate__animated animate__fadeIn');
                     setCurrentImageIndex(newIndex);
+                    setCurrentLinkIndex(newLink);
                 }, 1001);
             }
         }, 5000);
@@ -41,7 +45,7 @@ export default function TitleCarousel({ titleText, images, disclaimerText, rever
         return () => {
             clearInterval(intervalId);
         };
-    }, [currentImageIndex, images, isHovered]);
+    }, [currentImageIndex, currentLinkIndex, images, links, isHovered]);
 
     const handleHover = (hovered) => {
         setIsHovered(hovered);
@@ -62,10 +66,12 @@ export default function TitleCarousel({ titleText, images, disclaimerText, rever
 
         setTimeout(() => {
             setNextState(false);
-            const newIndex = (currentImageIndex - 1 + images.length) % images.length;
+            const newIndex = (currentImageIndex + 1 + images.length) % images.length;
+            const newLink = (currentLinkIndex + 1 + links.length) % links.length;
             setTriggerAnimation('animate__animated animate__fadeInRight');
             setBtnAnimation('animate__animated animate__fadeIn');
             setCurrentImageIndex(newIndex);
+            setCurrentLinkIndex(newLink);
         }, 1001);
     };
 
@@ -85,9 +91,11 @@ export default function TitleCarousel({ titleText, images, disclaimerText, rever
         setTimeout(() => {
             setNextState(false);
             const newIndex = (currentImageIndex - 1 + images.length) % images.length;
+            const newLink = (currentLinkIndex - 1 + links.length) % links.length;
             setTriggerAnimation('animate__animated animate__fadeInLeft');
             setBtnAnimation('animate__animated animate__fadeIn')
             setCurrentImageIndex(newIndex);
+            setCurrentLinkIndex(newLink);
         }, 1001);
     };
 
@@ -109,11 +117,13 @@ export default function TitleCarousel({ titleText, images, disclaimerText, rever
                                 >
                                     <CarbonPreviousFilled />
                                 </button>
+
                                 <img
                                     className={styles.hidden}
                                     src={images[currentImageIndex]}
                                     alt={`Image ${currentImageIndex + 1}`}
                                 />
+
                                 <button
                                     className={styles.hidden}
                                     onClick={nextSlide}
@@ -134,11 +144,18 @@ export default function TitleCarousel({ titleText, images, disclaimerText, rever
                                 >
                                     <CarbonPreviousFilled />
                                 </button>
-                                <img
-                                    className={`${styles.image} ${triggerAnimation}`}
-                                    src={images[currentImageIndex]}
-                                    alt={`Image ${currentImageIndex + 1}`}
-                                />
+
+                                <a 
+                                href={links[currentLinkIndex]
+                                
+                                }>
+                                    <img
+                                        className={`${styles.image} ${triggerAnimation}`}
+                                        src={images[currentImageIndex]}
+                                        alt={`Image ${currentImageIndex + 1}`}
+                                    />
+                                </a>
+
                                 <button
                                     className={`${styles.btn} ${btnAnimation}`}
                                     onClick={nextSlide}

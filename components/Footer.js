@@ -25,21 +25,21 @@ export default function Footer() {
 
                     <div className={styles.subRow}>
 
-                        <Link href={'https://www.linkedin.com/in/kaileb-hammontree/'}>
+                        <a href={'https://www.linkedin.com/in/kaileb-hammontree/'}>
                             <Image className={styles.logo} src={'../img/Footer/linkedin.svg'} width={281} height={70} alt="linked in logo" />
-                        </Link>
+                        </a>
 
-                        <Link href={' https://stackoverflow.com/users/20187731/hammontreewebdev?tab=profile'}>
+                        <a href={' https://stackoverflow.com/users/20187731/hammontreewebdev?tab=profile'}>
                             <Image className={styles.logo} src={'../img/Footer/stackoverflow.svg'} width={71} height={70} alt="stack overflow logo" />
-                        </Link>
+                        </a>
 
-                        <Link href={'https://github.com/HammontreeWebDev'}>
+                        <a href={'https://github.com/HammontreeWebDev'}>
                             <Image className={styles.logo} src={'../img/Footer/github.svg'} width={197} height={70} alt="git hub logo" />
-                        </Link>
+                        </a>
 
-                        <Link href={'https://www.facebook.com/hammontreefullstacksolutions/'}>
+                        <a href={'https://www.facebook.com/hammontreefullstacksolutions/'}>
                             <Image className={styles.logo} src={'../img/Footer/facebook.svg'} width={71} height={70} alt="facebook logo" />
-                        </Link>
+                        </a>
 
                     </div>
 
