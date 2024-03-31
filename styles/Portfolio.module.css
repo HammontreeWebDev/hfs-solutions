@@ -1,3 +1,8 @@
+.disclaimerContainer{
+    width: 100%;
+    text-align: left;
+}
+
 /* !Override the previous css for the components*/
 .rowReverse {
     flex-direction: row-reverse!important;

@@ -40,14 +40,14 @@ export default function Portfolio() {
                         <TitleImage
                             titleText={'Welcome To My Portfolio'}
                             jsxContent={
-                                <>
+                                <div className={styles.disclaimerContainer}>
                                     <p className={'disclaimerText'}>
                                         On this page you can preview the different projects I have completed!
                                     </p>
                                     <p className={'disclaimerText'}>
                                         Visit the application/website itself or navigate to the GitHub repository to check out the code base!
                                     </p>
-                                </>
+                                </div>
                             }
                             imgSrc={'/img/portfolio-page/portfolioTitleImage.svg'}
                             imgHeight={590}
