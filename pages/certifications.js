@@ -4,6 +4,18 @@ import RowSectionContainer from "../components/RowSectionContainer";
 import TitleImage from "../components/TitleImage";
 import Certificate from "../components/Certificate";
 
+// jsxContent={
+//     <Certificate 
+//     imgSrc={'/img/certifications-page/'} 
+//     imgHeight={} 
+//     imgWidth={875} 
+//     verifyHref={} 
+//     verifyLinkText={'Verify'}
+//     titleText={} 
+//     reverseText={styles.reverseText} 
+//     />
+// }
+
 
 export default function Certifications() {
 
@@ -42,12 +54,44 @@ export default function Certifications() {
                 />
 
                 {/* //! Row 2 Certificate Component NORMAL & COLUMN REVERSE(smaller screens) */}
-                
+                {/* // * UCF Boot Camp */}
+                <RowSectionContainer
+                    changeClass={styles.columnReverse}
+                    jsxContent={
+                        <Certificate 
+                        imgSrc={'/img/certifications-page/bootCamp.svg'} 
+                        imgHeight={658} 
+                        imgWidth={876} 
+                        verifyHref={'https://badgr.com/public/assertions/ewkha2NyQ8-IAo-788fTUA'} 
+                        verifyLinkText={'Verify'}
+                        titleText={'UCF Coding Boot Camp'} 
+                        />
+                    }
+
+                />
                 {/* //! Row 3 Certificate Component ROW REVERSE & reverseText(change to column reverse at smaller screens) */}
+                {/* // * UCF CYBER */}
+
+                <RowSectionContainer
+                    changeClass={styles.rowReverse}
+
+                />
 
                 {/* //! Row 4 Certificate Component NORMAL & COLUMN REVERSE(smaller screens) */}
+                {/* // * HackerRank CSS */}
+
+                <RowSectionContainer
+                    changeClass={styles.columnReverse}
+
+                />
 
                 {/* //! Row 5 Certificate Component ROW REVERSE & reverseText(change to column reverse at smaller screens) */}
+                {/* // * HackerRank Front End (ReactJS) */}
+
+                <RowSectionContainer
+                    changeClass={styles.rowReverse}
+
+                />
 
             </main>
 
