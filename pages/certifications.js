@@ -23,6 +23,7 @@ export default function Certifications() {
                             titleText={'Knowledge & Experience'}
                             jsxContent={
                                 <div className={styles.disclaimerContainer}>
+                                    {/* //TODO: possibly add typewriter effect here to cycle through [' certifications ', ' education ',  ' experience '] */}
                                     <p className={'disclaimerText'}>
                                         Interested in learning more about my certifications, education, and experience?
                                     </p>
