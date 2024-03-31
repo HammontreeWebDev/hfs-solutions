@@ -2,6 +2,8 @@ import styles from "../styles/Footer.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
+// TODO: Add Open Badges to Footer *Devil Face Emoji*
+
 export default function Footer() {
     return (
         <footer className={styles.container}>
