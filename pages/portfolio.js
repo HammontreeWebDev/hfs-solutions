@@ -103,6 +103,20 @@ export default function Portfolio() {
                 {/* //* Outta Touch */}
                 <RowSectionContainer
                     changeClass={styles.columnReverse}
+                    jsxContent={
+                        <Project 
+                        imgSrc={'/img/portfolio-page/outtaTouchMockUp.svg'} 
+                        imgHeight={658} 
+                        imgWidth={876} 
+                        visitHref={'https://outta-touch.herokuapp.com/'}
+                        visitLinkText={'Visit Site'}
+                        repoHref={'https://github.com/argounova/outta-touch'}
+                        repoLinkText={'Repository'}
+                        titleText={'Outta Touch'} 
+                        disclaimerText={'Built With:'}
+                        additionalText={'MongoDB | Express.js | ReactJS | Node.js | Apollo Client | Apollo Server | Web-sockets | GraphQL | GraphQL Subscriptions'}
+                        />
+                    }
                 />
 
 
