@@ -24,10 +24,11 @@
 
 .link{
     font-family: var(--main-text);
+    font-size: 20px;
     text-decoration: none;
     color: white;
     background-color: var(--primary5);
-    padding: 1%;
+    padding: 1% 10%;
     border-radius: 2rem;
 }
 
