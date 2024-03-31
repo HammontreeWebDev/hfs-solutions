@@ -24,6 +24,7 @@
     border-radius: 2rem;
     border: transparent;
     margin-top: 2%;
+    text-decoration: none;
 }
 
 .btn:hover{

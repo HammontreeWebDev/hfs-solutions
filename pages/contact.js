@@ -5,6 +5,7 @@ import RowSectionContainer from "../components/RowSectionContainer";
 import ContactForm from "../components/ContactForm";
 import TitleImageBtn from "../components/TitleImageBtn";
 
+// TODO: Custom Modal / Alerts - (Within ContactForm.js)
 
 export default function Contact() {
 
@@ -57,6 +58,7 @@ export default function Contact() {
                             imgHeight={584}
                             imgWidth={875}
                             btnText={'I Am Ready To Start My Project'}
+                            href={'https://app.hellobonsai.com/f/a14a29cd17402aa'}
                         />
                     }
                 />
