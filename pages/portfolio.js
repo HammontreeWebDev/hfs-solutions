@@ -146,6 +146,20 @@ export default function Portfolio() {
                 {/* //* PokéWire */}
                 <RowSectionContainer
                     changeClass={styles.columnReverse}
+                    jsxContent={
+                        <Project 
+                        imgSrc={'/img/portfolio-page/pokeMockUp.svg'} 
+                        imgHeight={658} 
+                        imgWidth={875} 
+                        visitHref={'https://luckysal.github.io/pokewire/index.html'}
+                        visitLinkText={'Visit Site'}
+                        repoHref={'https://github.com/LuckySal/pokewire'}
+                        repoLinkText={'Repository'}
+                        titleText={'PokéWire'} 
+                        disclaimerText={'Built With:'}
+                        additionalText={'HTML | JavaScript | jQuery | Bulma | CSS | Third Party API'}
+                        />
+                    }
                 />
 
 
