@@ -20,7 +20,7 @@ export default async function handler(req, res){
         });
 
         const mailOptions = {
-            from: email,
+            from: process.env.MAIL_USER,
             to: process.env.MAIL_USER,
             replyTo: email,
             subject: `Contact Form Submission - ${name}`,
