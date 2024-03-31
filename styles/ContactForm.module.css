@@ -10,6 +10,65 @@
     text-align: right;
 }
 
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 1%;
+}
+
+.formRow {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.inputLabel{
+    font-family: var(--main-text);
+    font-size: 20px;
+}
+
+.formInput{
+    font-family: var(--sub-text);
+    border: transparent;
+    border-radius: 3rem;
+    padding: 1.5%;
+    margin-top: 1%;
+}
+
+.messageInput{
+    font-family: var(--sub-text);
+    border: transparent;
+    border-radius: 3rem;
+    padding: 3%;
+    min-height: 10rem;
+    margin-top: 1%;
+    resize: none;
+}
+
+.messageContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
 @media screen and (max-width: 1235px) {
 
     .topContainer,

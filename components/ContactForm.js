@@ -108,7 +108,8 @@ export default function ContactForm({titleText, disclaimerText, additionalText})
                                 >
                                     Message:
                                 </label>
-                                <textarea 
+                                <textarea
+                                className={styles.messageInput}
                                 name="message"
                                 value={formValues.message}
                                 onChange={handleChange}
