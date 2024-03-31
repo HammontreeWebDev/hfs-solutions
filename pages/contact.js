@@ -3,6 +3,7 @@ import styles from "../styles/Contact.module.css";
 import TitleCarousel from "../components/TitleCarousel";
 import RowSectionContainer from "../components/RowSectionContainer";
 import ContactForm from "../components/ContactForm";
+import TitleImageBtn from "../components/TitleImageBtn";
 
 
 export default function Contact() {
@@ -33,19 +34,32 @@ export default function Contact() {
 
                 {/* //! Row2 ContactForm - column reverse for smaller screens */}
                 <RowSectionContainer
-                changeClass={styles.columnReverse}
+                    changeClass={styles.columnReverse}
                     jsxContent={
 
                         <ContactForm
-                        titleText={`General Inquiry Form`}
-                        disclaimerText={`If you have general questions for me, feel free to use this form to send me an email`}
-                        additionalText={`Please allow 24-72 business hours while waiting for a response`}
+                            titleText={`General Inquiry Form`}
+                            disclaimerText={`If you have general questions for me, feel free to use this form to send me an email`}
+                            additionalText={`Please allow 24-72 business hours while waiting for a response`}
                         />
 
                     }
                 />
 
                 {/* //! Row3 StartProject */}
+                <RowSectionContainer
+                    jsxContent={
+                        <TitleImageBtn
+                            titleText={'Start Your Project'}
+                            disclaimerText={'Are you ready to start your project?'}
+                            secondText={'Let me know more about your vision by filling out a brief questionnaire'}
+                            imgSrc={'/img/contact-page/phStart.svg'}
+                            imgHeight={584}
+                            imgWidth={875}
+                            btnText={'I Am Ready To Start My Project'}
+                        />
+                    }
+                />
 
             </main>
 

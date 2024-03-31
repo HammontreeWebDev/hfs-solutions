@@ -1,18 +1,35 @@
 .topContainer {
     height: 50%;
     width: auto;
-    text-align: right;
+    text-align: left;
 }
 
 .bottomContainer {
     height: 50%;
     width: auto;
-    text-align: right;
+    text-align: left;
 }
 
 .image{
     width: 100%;
     height: auto;
+}
+
+.btn{
+    font-family: var(--main-text);
+    font-size: 20px;
+    color: white;
+    background-color: var(--primary5);
+    padding: 1% 10%;
+    border-radius: 2rem;
+    border: transparent;
+    margin-top: 2%;
+}
+
+.btn:hover{
+    cursor: pointer;
+    color: var(--primary5);
+    background-color: white;
 }
 
 @media screen and (max-width: 1235px) {

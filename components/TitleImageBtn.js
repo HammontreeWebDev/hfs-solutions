@@ -1,7 +1,7 @@
 import styles from '../styles/TitleImageBtn.module.css';
 import Image from 'next/image';
 
-export default function TitleImageBtn({ titleText, disclaimerText, imgSrc, imgHeight, imgWidth, btnText}) {
+export default function TitleImageBtn({ titleText, disclaimerText, imgSrc, imgHeight, imgWidth, btnText, secondText}) {
     return (
 
         <>
@@ -15,6 +15,7 @@ export default function TitleImageBtn({ titleText, disclaimerText, imgSrc, imgHe
 
                 <div className={`${styles.bottomContainer} disclaimerText`}>
                     <p>{disclaimerText}</p>
+                    <p>{secondText}</p>
                 </div>
 
             </div>
@@ -31,7 +32,7 @@ export default function TitleImageBtn({ titleText, disclaimerText, imgSrc, imgHe
 
                 {/* // * add button Here: */}
 
-                <button>
+                <button className={styles.btn}>
                     {btnText}
                 </button>
 
