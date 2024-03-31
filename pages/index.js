@@ -50,7 +50,7 @@ export default function Home() {
         } />
 
         {/* // !Row 3 TitleCarousel Component (row-reverse) // */}
-        <RowSectionContainer changeClass={`${styles.rowReverse} ${styles.columnReverse}`} jsxContent={
+        <RowSectionContainer changeClass={`${styles.rowReverse}`} jsxContent={
           <TitleCarousel reverseText={styles.reverseText}
             images={[
               '../img/home-page/html5.svg',

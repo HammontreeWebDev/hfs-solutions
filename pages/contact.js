@@ -17,7 +17,7 @@ export default function Contact() {
             <main>
                 {/* //!Row 1 Title Carousel REVERSE */}
                 <RowSectionContainer
-                    changeClass={`${styles.rowReverse} ${styles.columnReverse}`}
+                    changeClass={`${styles.rowReverse}`}
                     jsxContent={
 
                         <TitleCarousel
@@ -31,8 +31,9 @@ export default function Contact() {
                     }
                 />
 
-                {/* //! Row2 ContactForm */}
+                {/* //! Row2 ContactForm - column reverse for smaller screens */}
                 <RowSectionContainer
+                changeClass={styles.columnReverse}
                     jsxContent={
 
                         <ContactForm

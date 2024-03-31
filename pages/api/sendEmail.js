@@ -27,7 +27,8 @@ export default async function handler(req, res){
             text: `
             Name: ${name}
             Email: ${email}
-            Message: ${message}
+            Message:
+            ${message}
             `
         };
 
