@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Certifications.module.css";
 import RowSectionContainer from "../components/RowSectionContainer";
 import TitleImage from "../components/TitleImage";
+import Certificate from "../components/Certificate";
 
 
 export default function Certifications() {
@@ -15,8 +16,8 @@ export default function Certifications() {
 
             <main>
 
-            {/* //! Row 1 Title Image w/disclaimer text*/}
-            <RowSectionContainer
+                {/* //! Row 1 Title Image w/disclaimer text*/}
+                <RowSectionContainer
                     jsxContent={
 
                         <TitleImage
@@ -40,8 +41,16 @@ export default function Certifications() {
                     }
                 />
 
+                {/* //! Row 2 Certificate Component NORMAL & COLUMN REVERSE(smaller screens) */}
+                
+                {/* //! Row 3 Certificate Component ROW REVERSE & reverseText(change to column reverse at smaller screens) */}
+
+                {/* //! Row 4 Certificate Component NORMAL & COLUMN REVERSE(smaller screens) */}
+
+                {/* //! Row 5 Certificate Component ROW REVERSE & reverseText(change to column reverse at smaller screens) */}
+
             </main>
-            
+
         </>
     )
 }
