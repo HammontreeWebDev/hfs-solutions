@@ -4,19 +4,20 @@ import RowSectionContainer from "../components/RowSectionContainer";
 import TitleImage from "../components/TitleImage";
 import Project from "../components/Project";
 
+// *Commented out boilerplate for adding new project components
 // jsxContent={
 //     <Project 
-//     imgSrc={} 
+//     imgSrc={'/img/portfolio-page/'} 
 //     imgHeight={} 
-//     imgWidth={} 
+//     imgWidth={875} 
 //     visitHref={}
-//     visitLinkText={}
+//     visitLinkText={'Visit Site'}
 //     repoHref={}
-//     repoLinkText={}
+//     repoLinkText={'Repository'}
 //     titleText={} 
-//     disclaimerText={}
+//     disclaimerText={'Built With:'}
 //     additionalText={}
-//     reverseText={} 
+//     reverseText={styles.reverseText} 
 //     />
 // }
 
@@ -76,10 +77,25 @@ export default function Portfolio() {
                     }
                 />
 
-                {/* //! Row 3 Project Component ROW REVERSE (change to column reverse at smaller screens)*/}
+                {/* //! Row 3 Project Component ROW REVERSE & reverseText(change to column reverse at smaller screens)*/}
                 {/* //* BroFit Personal Training */}
                 <RowSectionContainer
                     changeClass={styles.rowReverse}
+                    jsxContent={
+                        <Project 
+                        imgSrc={'/img/portfolio-page/brofitMockUp.svg'} 
+                        imgHeight={658} 
+                        imgWidth={876} 
+                        visitHref={'https://www.reesewilder.com/'}
+                        visitLinkText={'Visit Site'}
+                        repoHref={'https://github.com/HammontreeWebDev/reese-wilder'}
+                        repoLinkText={'Repository'}
+                        titleText={'BroFit Personal Training'} 
+                        disclaimerText={'Built With:'}
+                        additionalText={'HTML | BootStrap | CSS | JavaScript (repository is private due to client request)'}
+                        reverseText={styles.reverseText} 
+                        />
+                    }
                 />
 
 
@@ -90,10 +106,25 @@ export default function Portfolio() {
                 />
 
 
-                {/* //! Row 5 Project Component ROW REVERSE (change to column reverse at smaller screens)*/}
+                {/* //! Row 5 Project Component ROW REVERSE & reverseText (change to column reverse at smaller screens)*/}
                 {/* //* MTG++ */}
                 <RowSectionContainer
                     changeClass={styles.rowReverse}
+                    jsxContent={
+                        <Project 
+                        imgSrc={'/img/portfolio-page/mtgMockUp.svg'} 
+                        imgHeight={658} 
+                        imgWidth={875} 
+                        visitHref={'https://peaceful-escarpment-11973.herokuapp.com/'}
+                        visitLinkText={'Visit Site'}
+                        repoHref={'https://github.com/HammontreeWebDev/MTGpp'}
+                        repoLinkText={'Repository'}
+                        titleText={'MTG++'} 
+                        disclaimerText={'Built With:'}
+                        additionalText={'Node.js | Express.js | mySQL | JavaScript | jQuery | Handlebars | Bootstrap | CSS'}
+                        reverseText={styles.reverseText} 
+                        />
+                    }
                 />
 
 
