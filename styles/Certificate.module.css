@@ -34,9 +34,20 @@
     background-color: white;
 }
 
+.badge {
+    border-radius: 60rem;
+}
+
 @media screen and (max-width: 1235px) {
 
     .titleContainer {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px){ 
+    .badge {
+        width: 90%;
+        height: auto;
     }
 }

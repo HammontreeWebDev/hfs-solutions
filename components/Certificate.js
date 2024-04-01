@@ -2,7 +2,7 @@ import styles from "../styles/Certificate.module.css";
 
 import Image from 'next/image';
 
-export default function Project({ imgSrc, imgHeight, imgWidth, reverseText, titleText, verifyHref, verifyLinkText, imgAlt }) {
+export default function Project({ imgSrc, imgHeight, imgWidth, reverseText, titleText, verifyHref, verifyLinkText, imgAlt, badgeSrc, badgeAlt}) {
     return (
 
         <>
@@ -15,6 +15,12 @@ export default function Project({ imgSrc, imgHeight, imgWidth, reverseText, titl
                     height={imgHeight}
                     width={imgWidth}
                     alt={imgAlt}
+                />
+
+                <img 
+                className={`${styles.badge}`}
+                src={badgeSrc}
+                alt={badgeAlt}
                 />
 
                 <div className={styles.linksRow}>

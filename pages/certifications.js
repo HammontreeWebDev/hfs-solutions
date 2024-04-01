@@ -16,6 +16,24 @@ import Certificate from "../components/Certificate";
 //     />
 // }
 
+// Badge data
+const bootCampBadgeData = [{
+    "id": "https://api.badgr.io/public/assertions/ewkha2NyQ8-IAo-788fTUA",
+    "image": {
+        "id": "https://api.badgr.io/public/assertions/ewkha2NyQ8-IAo-788fTUA/image"
+    }
+}];
+
+const cyberBadgeData = [
+    {
+        "id": "https://api.badgr.io/public/assertions/Rxyg7wKwTgWLC07_shNy6A",
+        "image": {
+            "id": "https://api.badgr.io/public/assertions/Rxyg7wKwTgWLC07_shNy6A/image"
+        }
+
+    }
+]
+
 
 export default function Certifications() {
 
@@ -47,7 +65,7 @@ export default function Certifications() {
                                     </p>
                                 </div>
                             }
-                            imgSrc={'/img/certifications-page/certTitleImage.svg'}
+                            imgSrc={'/img/certifications-page/certTitleImage.webp'}
                             imgHeight={590}
                             imgWidth={574}
                             imgAlt={'light bulb title image'}
@@ -62,18 +80,22 @@ export default function Certifications() {
                 <RowSectionContainer
                     changeClass={styles.columnReverse}
                     jsxContent={
-                        <Certificate
-                            imgSrc={'/img/certifications-page/bootCamp.svg'}
-                            imgHeight={658}
-                            imgWidth={876}
-                            imgAlt={'coding boot camp certificate'}
-                            verifyHref={'https://badgr.com/public/assertions/ewkha2NyQ8-IAo-788fTUA'}
-                            verifyLinkText={'Verify'}
-                            titleText={'UCF Coding Boot Camp'}
-                        />
-                    }
+                        <>
+                            {bootCampBadgeData.map((badge) => (
 
+                                <Certificate
+                                    badgeSrc={badge.image.id}
+                                    badgeAlt={'coding boot camp certificate'}
+                                    verifyHref={badge.id}
+                                    verifyLinkText={'Verify'}
+                                    titleText={'UCF Coding Boot Camp'}
+                                />
+
+                            ))}
+                        </>
+                    }
                 />
+
                 {/* //! Row 3 Certificate Component ROW REVERSE & reverseText(change to column reverse at smaller screens) */}
                 {/* // * UCF CYBER */}
 
