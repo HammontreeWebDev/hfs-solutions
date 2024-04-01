@@ -102,16 +102,20 @@ export default function Certifications() {
                 <RowSectionContainer
                     changeClass={styles.rowReverse}
                     jsxContent={
-                        <Certificate
-                            imgSrc={'/img/certifications-page/cyber.svg'}
-                            imgHeight={658}
-                            imgWidth={876}
-                            imgAlt={'cyber defense certificate'}
-                            verifyHref={'https://badgr.com/public/assertions/Rxyg7wKwTgWLC07_shNy6A'}
-                            verifyLinkText={'Verify'}
-                            titleText={'UCF Cyber Defense Professional Certificate'}
-                            reverseText={styles.reverseText}
-                        />
+                        <>
+                            {cyberBadgeData.map((badge) => (
+
+                                <Certificate
+                                    badgeSrc={badge.image.id}
+                                    badgeAlt={'cyber defense certificate'}
+                                    verifyHref={badge.id}
+                                    verifyLinkText={'Verify'}
+                                    titleText={'UCF Cyber Defense Professional'}
+                                    reverseText={styles.reverseText}
+                                />
+
+                            ))}
+                        </>
                     }
 
                 />
