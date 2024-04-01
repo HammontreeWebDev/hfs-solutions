@@ -113,11 +113,9 @@ export default function Certifications() {
                                     titleText={'UCF Cyber Defense Professional'}
                                     reverseText={styles.reverseText}
                                 />
-
                             ))}
                         </>
                     }
-
                 />
 
                 {/* //! Row 4 Certificate Component NORMAL & COLUMN REVERSE(smaller screens) */}
@@ -127,7 +125,7 @@ export default function Certifications() {
                     changeClass={styles.columnReverse}
                     jsxContent={
                         <Certificate
-                            imgSrc={'/img/certifications-page/css.svg'}
+                            imgSrc={'/img/certifications-page/css.webp'}
                             imgHeight={658}
                             imgWidth={876}
                             imgAlt={'css certificate'}
@@ -146,7 +144,7 @@ export default function Certifications() {
                     changeClass={styles.rowReverse}
                     jsxContent={
                         <Certificate
-                            imgSrc={'/img/certifications-page/frontEnd.svg'}
+                            imgSrc={'/img/certifications-page/frontEnd.webp'}
                             imgHeight={658}
                             imgWidth={876}
                             imgAlt={'front end developer, reactJS certificate'}
