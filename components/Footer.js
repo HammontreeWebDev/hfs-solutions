@@ -3,13 +3,30 @@ import Image from "next/image";
 import Link from "next/link";
 
 // TODO: Add Open Badges to Footer *Devil Face Emoji*
+// Badge data
+const bootCampBadgeData = [{
+    "id": "https://api.badgr.io/public/assertions/ewkha2NyQ8-IAo-788fTUA",
+    "image": {
+        "id": "https://api.badgr.io/public/assertions/ewkha2NyQ8-IAo-788fTUA/image"
+    }
+}];
+
+const cyberBadgeData = [
+    {
+        "id": "https://api.badgr.io/public/assertions/Rxyg7wKwTgWLC07_shNy6A",
+        "image": {
+            "id": "https://api.badgr.io/public/assertions/Rxyg7wKwTgWLC07_shNy6A/image"
+        }
+
+    }
+]
 
 export default function Footer() {
     return (
         <footer className={styles.container}>
-              {/* background image */}
+            {/* background image */}
 
-                <Image className={styles.vector} src={'../img/Footer/footer.svg'} width={1920} height={430} alt={'background image'} />
+            <Image className={styles.vector} src={'../img/Footer/footer.svg'} width={1920} height={430} alt={'background image'} />
             <div className={styles.row}>
 
                 <div className={styles.footerColumn1}>
@@ -21,6 +38,31 @@ export default function Footer() {
                         <br />
                         Copyright © 2024. Hammontree Full-Stack Solutions LLC
                     </p>
+                    <div className={styles.badgeRow}>
+                        {bootCampBadgeData.map((badge, index) => (
+                            <div className={styles.badgeColumn} key={index}>
+                                <a href={`${badge.id}`}>
+                                    <img
+                                        className={styles.badge}
+                                        src={badge.image.id}
+                                        alt="Badge Image"
+                                    />
+                                </a>
+                            </div>
+                        ))}
+
+                        {cyberBadgeData.map((badge, index) => (
+                            <div className={styles.badgeColumn} key={index}>
+                                <a href={`${badge.id}`}>
+                                    <img
+                                        className={styles.badge}
+                                        src={badge.image.id}
+                                        alt="Badge Image"
+                                    />
+                                </a>
+                            </div>
+                        ))}
+                    </div>
                 </div>
 
                 <div className={styles.footerColumn2}>

@@ -65,6 +65,26 @@
     color: white;
 }
 
+.badge{
+    width: 100%;
+    height: auto;
+    border-radius: 60rem;
+
+}
+
+.badgeColumn{
+    width: 15%;
+    display: flex;
+    margin: 1%;
+}
+
+.badgeRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
 @media screen and (max-width: 1235px) {
     .logo {
         height: 3rem;
@@ -90,9 +110,9 @@
     .container{
         height: 100vh;
     }
-    .row {
-        flex-direction: column;
-        justify-content: flex-end;
+    .row{
+        flex-direction: column-reverse;
+        justify-content: flex-start;
     }
     .footerColumn1{
         width: 100%;
@@ -104,8 +124,7 @@
     }
     .vector {
         height: 80%;
-        width: 200%;
-        justify-self: flex-end;
+        width: 650%;
     }
 }
 
@@ -116,6 +135,8 @@
     }
     .vector {
         height: 100%;
-        width: 650%;
+    }
+    .badgeColumn{
+        width: 25%;
     }
 }
