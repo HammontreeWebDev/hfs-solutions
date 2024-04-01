@@ -2,7 +2,6 @@ import styles from "../styles/Footer.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
-// TODO: Add Open Badges to Footer *Devil Face Emoji*
 // Badge data
 const bootCampBadgeData = [{
     "id": "https://api.badgr.io/public/assertions/ewkha2NyQ8-IAo-788fTUA",
