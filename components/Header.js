@@ -45,6 +45,7 @@ export default function Header() {
             width={578} 
             height={430} 
             alt='header image'
+            priority={true}
             />
             <Image 
             className={styles.vector} 
@@ -61,6 +62,7 @@ export default function Header() {
                 width={768}
                 height={576}
                 alt='mobile header image'
+                priority={true}
                 />
             </div>
             {

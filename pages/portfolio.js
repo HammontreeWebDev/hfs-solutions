@@ -55,6 +55,7 @@ export default function Portfolio() {
                             imgHeight={590}
                             imgWidth={574}
                             imgAlt={'thumbprint title image'}
+                            priority={true}
                         />
 
                     }

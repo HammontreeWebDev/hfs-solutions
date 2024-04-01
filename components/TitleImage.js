@@ -20,6 +20,7 @@ export default function TitleImage(props) {
                     height={props.imgHeight}
                     width={props.imgWidth}
                     alt={props.imgAlt}
+                    priority={props.priority}
                 />
             </div>
 

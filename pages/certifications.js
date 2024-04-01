@@ -50,6 +50,7 @@ export default function Certifications() {
                             imgHeight={590}
                             imgWidth={574}
                             imgAlt={'light bulb title image'}
+                            priority={true}
                         />
 
                     }

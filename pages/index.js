@@ -23,6 +23,7 @@ export default function Home() {
             imgHeight={703.125}
             imgWidth={875}
             imgAlt={'jesse ryder brown foundation website mockup'}
+            priority={true}
           />
 
         } />
