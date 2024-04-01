@@ -29,6 +29,7 @@ export default function Biography() {
                             imgSrc={`../img/biography-page/avatar.svg`}
                             imgHeight={590}
                             imgWidth={574}
+                            imgAlt={'kaileb hammontree avatar'}
                             jsxContent={
                                 <h6 className={styles.heading}>
                                     <span className={styles.adjectiveContainer}>

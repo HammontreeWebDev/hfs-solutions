@@ -39,8 +39,20 @@ export default function Header() {
     return (
         // classname for dimension specifications
         <header className={styles.container}>
-            <Image className={styles.leftImage} src='../img/Header/hfs-header-left.svg' width={578} height={430} />
-            <Image className={styles.vector} src='../img/Header/header-vector.svg' width={1376} height={130} />
+            <Image 
+            className={styles.leftImage} 
+            src='../img/Header/hfs-header-left.svg' 
+            width={578} 
+            height={430} 
+            alt='header image'
+            />
+            <Image 
+            className={styles.vector} 
+            src='../img/Header/header-vector.svg' 
+            width={1376} 
+            height={130} 
+            alt='background vector image'
+            />
 
             <div className={styles.mobileTitleContainer}>
                 <Image 
@@ -48,6 +60,7 @@ export default function Header() {
                 src='/img/Header/mobileHeaderImage.svg'
                 width={768}
                 height={576}
+                alt='mobile header image'
                 />
             </div>
             {

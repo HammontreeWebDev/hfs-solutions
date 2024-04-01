@@ -59,6 +59,7 @@ export default function Contact() {
                             imgSrc={'/img/contact-page/phStart.svg'}
                             imgHeight={584}
                             imgWidth={875}
+                            imgAlt={'woman filling out questionnaire'}
                             btnText={'I Am Ready To Start My Project'}
                             href={'https://app.hellobonsai.com/f/a14a29cd17402aa'}
                         />

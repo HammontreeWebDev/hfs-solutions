@@ -2,7 +2,7 @@ import styles from "../styles/Certificate.module.css";
 
 import Image from 'next/image';
 
-export default function Project({ imgSrc, imgHeight, imgWidth, reverseText, titleText, verifyHref, verifyLinkText }) {
+export default function Project({ imgSrc, imgHeight, imgWidth, reverseText, titleText, verifyHref, verifyLinkText, imgAlt }) {
     return (
 
         <>
@@ -14,6 +14,7 @@ export default function Project({ imgSrc, imgHeight, imgWidth, reverseText, titl
                     src={imgSrc}
                     height={imgHeight}
                     width={imgWidth}
+                    alt={imgAlt}
                 />
 
                 <div className={styles.linksRow}>

@@ -49,6 +49,7 @@ export default function Certifications() {
                             imgSrc={'/img/certifications-page/certTitleImage.svg'}
                             imgHeight={590}
                             imgWidth={574}
+                            imgAlt={'light bulb title image'}
                         />
 
                     }
@@ -63,6 +64,7 @@ export default function Certifications() {
                             imgSrc={'/img/certifications-page/bootCamp.svg'}
                             imgHeight={658}
                             imgWidth={876}
+                            imgAlt={'coding boot camp certificate'}
                             verifyHref={'https://badgr.com/public/assertions/ewkha2NyQ8-IAo-788fTUA'}
                             verifyLinkText={'Verify'}
                             titleText={'UCF Coding Boot Camp'}
@@ -80,6 +82,7 @@ export default function Certifications() {
                             imgSrc={'/img/certifications-page/cyber.svg'}
                             imgHeight={658}
                             imgWidth={876}
+                            imgAlt={'cyber defense certificate'}
                             verifyHref={'https://badgr.com/public/assertions/Rxyg7wKwTgWLC07_shNy6A'}
                             verifyLinkText={'Verify'}
                             titleText={'UCF Cyber Defense Professional Certificate'}
@@ -99,6 +102,7 @@ export default function Certifications() {
                             imgSrc={'/img/certifications-page/css.svg'}
                             imgHeight={658}
                             imgWidth={876}
+                            imgAlt={'css certificate'}
                             verifyHref={'https://www.hackerrank.com/certificates/c7a702eeeac3'}
                             verifyLinkText={'Verify'}
                             titleText={'CSS Skill Certification'}
@@ -117,6 +121,7 @@ export default function Certifications() {
                             imgSrc={'/img/certifications-page/frontEnd.svg'}
                             imgHeight={658}
                             imgWidth={876}
+                            imgAlt={'front end developer, reactJS certificate'}
                             verifyHref={'https://www.hackerrank.com/certificates/4d0e4bd62b7c'}
                             verifyLinkText={'Verify'}
                             titleText={'Front-End Developer (ReactJS) Certification'}

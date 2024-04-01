@@ -54,6 +54,7 @@ export default function Portfolio() {
                             imgSrc={'/img/portfolio-page/portfolioTitleImage.svg'}
                             imgHeight={590}
                             imgWidth={574}
+                            imgAlt={'thumbprint title image'}
                         />
 
                     }
@@ -68,6 +69,7 @@ export default function Portfolio() {
                             imgSrc={'/img/portfolio-page/jesseMockUp.svg'}
                             imgHeight={658}
                             imgWidth={876}
+                            imgAlt={'jesse ryder brown foundation website mockup'}
                             visitHref={'https://www.j-boocustoms.org/'}
                             visitLinkText={'Visit Site'}
                             repoHref={'https://github.com/HammontreeWebDev/j-boo-customs-nextJS'}
@@ -88,6 +90,7 @@ export default function Portfolio() {
                             imgSrc={'/img/portfolio-page/brofitMockUp.svg'}
                             imgHeight={658}
                             imgWidth={876}
+                            imgAlt={'brofit website mockup'}
                             visitHref={'https://www.reesewilder.com/'}
                             visitLinkText={'Visit Site'}
                             repoHref={'https://github.com/HammontreeWebDev/reese-wilder'}
@@ -110,6 +113,7 @@ export default function Portfolio() {
                             imgSrc={'/img/portfolio-page/outtaTouchMockUp.svg'}
                             imgHeight={658}
                             imgWidth={876}
+                            imgAlt={'outta touch application mockup'}
                             visitHref={'https://outta-touch.herokuapp.com/'}
                             visitLinkText={'Visit Site'}
                             repoHref={'https://github.com/argounova/outta-touch'}
@@ -131,6 +135,7 @@ export default function Portfolio() {
                             imgSrc={'/img/portfolio-page/mtgMockUp.svg'}
                             imgHeight={658}
                             imgWidth={875}
+                            imgAlt={'mtg++ website mockup'}
                             visitHref={'https://peaceful-escarpment-11973.herokuapp.com/'}
                             visitLinkText={'Visit Site'}
                             repoHref={'https://github.com/HammontreeWebDev/MTGpp'}
@@ -153,6 +158,7 @@ export default function Portfolio() {
                             imgSrc={'/img/portfolio-page/pokeMockUp.svg'}
                             imgHeight={658}
                             imgWidth={875}
+                            imgAlt={'PokéWire website mockup'}
                             visitHref={'https://luckysal.github.io/pokewire/index.html'}
                             visitLinkText={'Visit Site'}
                             repoHref={'https://github.com/LuckySal/pokewire'}

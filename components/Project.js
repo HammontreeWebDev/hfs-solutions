@@ -1,7 +1,7 @@
 import styles from '../styles/Project.module.css';
 import Image from 'next/image';
 
-export default function Project({ imgSrc, imgHeight, imgWidth, reverseText, titleText, disclaimerText, additionalText, visitHref, visitLinkText, repoHref, repoLinkText }) {
+export default function Project({ imgSrc, imgHeight, imgWidth, reverseText, titleText, disclaimerText, additionalText, visitHref, visitLinkText, repoHref, repoLinkText, imgAlt }) {
     return (
 
         <>
@@ -13,6 +13,7 @@ export default function Project({ imgSrc, imgHeight, imgWidth, reverseText, titl
                     src={imgSrc}
                     height={imgHeight}
                     width={imgWidth}
+                    alt={imgAlt}
                 />
 
                 <div className={styles.linksRow}>

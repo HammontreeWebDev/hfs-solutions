@@ -25,7 +25,12 @@ export default function Footer() {
         <footer className={styles.container}>
             {/* background image */}
 
-            <Image className={styles.vector} src={'../img/Footer/footer.svg'} width={1920} height={430} alt={'background image'} />
+            <Image 
+            className={styles.vector} 
+            src={'../img/Footer/footer.svg'} 
+            width={1920} 
+            height={430} 
+            alt={'background image'} />
             <div className={styles.row}>
 
                 <div className={styles.footerColumn1}>
