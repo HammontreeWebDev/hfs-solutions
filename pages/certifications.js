@@ -45,7 +45,7 @@ export default function Certifications() {
                                     </p>
                                 </div>
                             }
-                            imgSrc={'/img/portfolio-page/portfolioTitleImage.svg'}
+                            imgSrc={'/img/certifications-page/certTitleImage.svg'}
                             imgHeight={590}
                             imgWidth={574}
                         />
