@@ -8,6 +8,9 @@
     height: 50%;
     width: 100%;
     text-align: right;
+    background-color: var(--alt4);
+    border-radius: 1rem;
+    padding: 0% 1% 0% 1%;
 }
 
 .carousel {

@@ -1,6 +1,9 @@
 .disclaimerContainer{
     width: 100%;
     text-align: left;
+    background-color: var(--alt4);
+    border-radius: 1rem;
+    padding: 0% 1% 0% 1%;
 }
 
 /* !Override the previous css for the components*/
