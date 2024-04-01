@@ -27,7 +27,7 @@ export default function Biography() {
 
                         <TitleImage
                             titleText={'Kaileb Hammontree'}
-                            imgSrc={`../img/biography-page/avatar.svg`}
+                            imgSrc={`/img/biography-page/avatar.webp`}
                             imgHeight={590}
                             imgWidth={574}
                             imgAlt={'kaileb hammontree avatar'}

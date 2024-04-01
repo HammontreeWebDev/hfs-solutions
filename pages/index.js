@@ -20,7 +20,7 @@ export default function Home() {
 
           <TitleImage
             titleText={`Transforming Visions Into Digital Reality`}
-            imgSrc={`../img/home-page/home-page-mock-up.svg`}
+            imgSrc={`/img/home-page/home-page-mock-up.webp`}
             imgHeight={703.125}
             imgWidth={875}
             imgAlt={'jesse ryder brown foundation website mockup'}
@@ -33,12 +33,12 @@ export default function Home() {
         <RowSectionContainer changeClass={styles.columnReverse} jsxContent={
           <TitleCarousel
             images={[
-              '../img/home-page/MongoDB.svg',
-              '../img/home-page/ExpressJS.svg',
-              '../img/home-page/ReactJS.svg',
-              '../img/home-page/NodeJS.svg',
-              '../img/home-page/Apollo.svg',
-              '../img/home-page/GraphQL.svg'
+              '/img/home-page/MongoDB.svg',
+              '/img/home-page/ExpressJS.svg',
+              '/img/home-page/ReactJS.svg',
+              '/img/home-page/NodeJS.svg',
+              '/img/home-page/Apollo.svg',
+              '/img/home-page/GraphQL.svg'
             ]}
             links={[
               'https://www.mongodb.com/what-is-mongodb',
@@ -57,11 +57,11 @@ export default function Home() {
         <RowSectionContainer changeClass={`${styles.rowReverse}`} jsxContent={
           <TitleCarousel reverseText={styles.reverseText}
             images={[
-              '../img/home-page/html5.svg',
-              '../img/home-page/css3.svg',
-              '../img/home-page/ReactJS.svg',
-              '../img/home-page/javascript.svg',
-              '../img/home-page/jQuery.svg'
+              '/img/home-page/html5.svg',
+              '/img/home-page/css3.svg',
+              '/img/home-page/ReactJS.svg',
+              '/img/home-page/javascript.svg',
+              '/img/home-page/jQuery.svg'
             ]}
             links={[
               'https://blog.hubspot.com/blog/tabid/6307/bid/5847/a-marketer-s-guide-to-html5.aspx',
@@ -79,11 +79,11 @@ export default function Home() {
         <RowSectionContainer changeClass={styles.columnReverse} jsxContent={
           <TitleCarousel
             images={[
-              '../img/home-page/mySQL.svg',
-              '../img/home-page/sql.svg',
-              '../img/home-page/figma.svg',
-              '../img/home-page/vercel.svg',
-              '../img/home-page/ghPages.svg'
+              '/img/home-page/mySQL.svg',
+              '/img/home-page/sql.svg',
+              '/img/home-page/figma.svg',
+              '/img/home-page/vercel.svg',
+              '/img/home-page/ghPages.svg'
             ]}
             links={[
               'https://dev.mysql.com/doc/refman/8.3/en/what-is-mysql.html',
