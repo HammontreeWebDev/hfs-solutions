@@ -10,6 +10,8 @@ import "animate.css";
 import { Architects_Daughter } from 'next/font/google';
 import { Josefin_Sans } from "next/font/google";
 
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 // store fonts in a variable and specify parameters
 const architectsDaughter = Architects_Daughter({
     subsets: ['latin'],
@@ -45,6 +47,7 @@ const App = ({ Component, pageProps }) => {
             <Header />
             <Component {...pageProps} />
             <Footer />
+            <SpeedInsights />
         </>
     )
 };
