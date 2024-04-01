@@ -52,7 +52,7 @@ export default function Portfolio() {
                                     </p>
                                 </div>
                             }
-                            imgSrc={'/img/portfolio-page/portfolioTitleImage.svg'}
+                            imgSrc={'/img/portfolio-page/portfolioTitleImage.webp'}
                             imgHeight={590}
                             imgWidth={574}
                             imgAlt={'thumbprint title image'}
@@ -68,7 +68,7 @@ export default function Portfolio() {
                     changeClass={styles.columnReverse}
                     jsxContent={
                         <Project
-                            imgSrc={'/img/portfolio-page/jesseMockUp.svg'}
+                            imgSrc={'/img/portfolio-page/jesseMockUp.webp'}
                             imgHeight={658}
                             imgWidth={876}
                             imgAlt={'jesse ryder brown foundation website mockup'}
@@ -89,7 +89,7 @@ export default function Portfolio() {
                     changeClass={styles.rowReverse}
                     jsxContent={
                         <Project
-                            imgSrc={'/img/portfolio-page/brofitMockUp.svg'}
+                            imgSrc={'/img/portfolio-page/brofitMockUp.webp'}
                             imgHeight={658}
                             imgWidth={876}
                             imgAlt={'brofit website mockup'}
@@ -112,7 +112,7 @@ export default function Portfolio() {
                     changeClass={styles.columnReverse}
                     jsxContent={
                         <Project
-                            imgSrc={'/img/portfolio-page/outtaTouchMockUp.svg'}
+                            imgSrc={'/img/portfolio-page/outtaTouchMockUp.webp'}
                             imgHeight={658}
                             imgWidth={876}
                             imgAlt={'outta touch application mockup'}
@@ -134,7 +134,7 @@ export default function Portfolio() {
                     changeClass={styles.rowReverse}
                     jsxContent={
                         <Project
-                            imgSrc={'/img/portfolio-page/mtgMockUp.svg'}
+                            imgSrc={'/img/portfolio-page/mtgMockUp.webp'}
                             imgHeight={658}
                             imgWidth={875}
                             imgAlt={'mtg++ website mockup'}
@@ -157,7 +157,7 @@ export default function Portfolio() {
                     changeClass={styles.columnReverse}
                     jsxContent={
                         <Project
-                            imgSrc={'/img/portfolio-page/pokeMockUp.svg'}
+                            imgSrc={'/img/portfolio-page/pokeMockUp.webp'}
                             imgHeight={658}
                             imgWidth={875}
                             imgAlt={'PokéWire website mockup'}
