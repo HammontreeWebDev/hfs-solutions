@@ -41,8 +41,9 @@ const App = ({ Component, pageProps }) => {
                 }
             </style>
             <Head>
-                <meta name="viewport" content="width=device-width, initial-scale=1" lang="en" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/img/favicon.ico" />
+                <html lang="en" />
             </Head>
             <Header />
             <Component {...pageProps} />
