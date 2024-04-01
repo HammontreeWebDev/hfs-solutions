@@ -35,7 +35,7 @@ export default function SimpleCard(props) {
             </p>
 
             <Link className={styles.link} href={'/portfolio'}>
-            Vist Portfolio
+            Visit Portfolio
             </Link>
         </article>
     )
