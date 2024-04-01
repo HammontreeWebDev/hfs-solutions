@@ -31,6 +31,7 @@ export default function Portfolio() {
                 <title>Portfolio | Kaileb Hammontree</title>
                 <meta name="description" content="Explore Kaileb Hammontree's Project Portfolio. Discover what projects he has worked on and find out what Hammontree Full-Stack Solutions can do for you!" />
                 <meta name="keywords" content="Portfolio, Web Development, Full-Stack Development, Kaileb Hammontree" />
+                <link rel="canonical" href="https://www.kailebhammontree.com/portfolio" />
             </Head>
 
             <main>

@@ -16,6 +16,7 @@ export default function Contact() {
                 <title>Contact | Kaileb Hammontree</title>
                 <meta name="description" content="Start your project today with Hammontree Full-Stack Solutions LLC. Fill out a General Inquiry Form or take the first step by filling out an Interest Form Questionnaire." />
                 <meta name="keywords" content="Contact, Hammontree Full-Stack Solutions LLC, Questionnaire, Build your website" />
+                <link rel="canonical" href="https://www.kailebhammontree.com/contact" />
             </Head>
 
             <main>

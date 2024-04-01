@@ -26,6 +26,7 @@ export default function Certifications() {
                 <title>Certifications | Kaileb Hammontree</title>
                 <meta name="description" content="Learn about what qualifies Kaileb Hammontree to tackle your next project." />
                 <meta name="keywords" content="certifications, education, Kaileb Hammontree, University Of Central Florida, Web Developer, react, front-end, full-stack, back-end" />
+                <link rel="canonical" href="https://www.kailebhammontree.com/certifications" />
             </Head>
 
             <main>
