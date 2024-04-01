@@ -29,7 +29,7 @@ export default function Contact() {
                             reverseText={styles.reverseText}
                             titleText={`Stay Connected`}
                             disclaimerText={`Check out the list of socials and click on the icon to visit!`}
-                            images={['../img/contact-page/linkedInCarousel.svg', '../img/contact-page/stackoverflowcarousel.svg', '../img/contact-page/githubcarousel.svg', '../img/contact-page/facebookcarousel.svg']}
+                            images={['/img/contact-page/linkedInCarousel.svg', '/img/contact-page/stackoverflowcarousel.svg', '/img/contact-page/githubcarousel.svg', '/img/contact-page/facebookcarousel.svg']}
                             links={['https://www.linkedin.com/in/kaileb-hammontree/', 'https://stackoverflow.com/users/20187731/hammontreewebdev?tab=profile', 'https://github.com/HammontreeWebDev', 'https://www.facebook.com/hammontreefullstacksolutions/']}
                         />
 
@@ -57,7 +57,7 @@ export default function Contact() {
                             titleText={'Start Your Project'}
                             disclaimerText={'Are you ready to start your project?'}
                             secondText={'Let me know more about your vision by filling out a brief questionnaire'}
-                            imgSrc={'/img/contact-page/phStart.svg'}
+                            imgSrc={'/img/contact-page/phStart.webp'}
                             imgHeight={584}
                             imgWidth={875}
                             imgAlt={'woman filling out questionnaire'}
