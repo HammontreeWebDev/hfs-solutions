@@ -41,7 +41,7 @@ export default function Header() {
         <header className={styles.container}>
             <Image 
             className={styles.leftImage} 
-            src='../img/Header/hfs-header-left.svg' 
+            src='/img/Header/hfs-header-left.svg' 
             width={578} 
             height={430} 
             alt='header image'
@@ -49,7 +49,7 @@ export default function Header() {
             />
             <Image 
             className={styles.vector} 
-            src='../img/Header/header-vector.svg' 
+            src='/img/Header/header-vector.svg' 
             width={1376} 
             height={130} 
             alt='background vector image'
@@ -58,7 +58,7 @@ export default function Header() {
             <div className={styles.mobileTitleContainer}>
                 <Image 
                 className={styles.mobileHeaderImage}
-                src='/img/Header/mobileHeaderImage.svg'
+                src='/img/Header/mobileHeaderImage.webp'
                 width={768}
                 height={576}
                 alt='mobile header image'

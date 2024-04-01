@@ -27,7 +27,7 @@ export default function Footer() {
 
             <Image 
             className={styles.vector} 
-            src={'../img/Footer/footer.svg'} 
+            src={'/img/Footer/footer.svg'} 
             width={1920} 
             height={430} 
             alt={'background image'} />
