@@ -14,6 +14,8 @@ export default function Biography() {
 
             <Head>
                 <title>Bio | Kaileb Hammontree</title>
+                <meta name="description" content="Learn more about Kaileb Hammontree, the owner of Hammontree Full-Stack Solutions, LLC." />
+                <meta name="keywords" content="About Me, Bio, Kaileb Hammontree, University Of Central Florida, Web Developer" />
             </Head>
 
             <main>

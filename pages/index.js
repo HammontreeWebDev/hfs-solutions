@@ -9,7 +9,8 @@ export default function Home() {
     <>
       <Head>
         <title>Home | Kaileb Hammontree</title>
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Discover Kaileb Hammontree, the owner of Hammontree Full-Stack Solutions, LLC, and an accomplished Full-Stack Web Developer based in Central Florida. With certifications from The University of Central Florida as a Cyber Security Professional and Full-Stack Web Developer, Kaileb brings a wealth of knowledge and skills to deliver exceptional results for your next project. Explore Kaileb's portfolio and take the first step by reaching out through our convenient contact section to initiate a fruitful conversation today." />
+        <meta name="keywords" content="website development, oviedo, florida, UCF, central florida, developer, kaileb hammontree, full-stack web development, portfolio, solutions" />
       </Head>
       <main>
 

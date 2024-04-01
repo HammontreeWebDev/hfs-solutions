@@ -29,6 +29,8 @@ export default function Portfolio() {
 
             <Head>
                 <title>Portfolio | Kaileb Hammontree</title>
+                <meta name="description" content="Explore Kaileb Hammontree's Project Portfolio. Discover what projects he has worked on and find out what Hammontree Full-Stack Solutions can do for you!" />
+                <meta name="keywords" content="Portfolio, Web Development, Full-Stack Development, Kaileb Hammontree" />
             </Head>
 
             <main>
@@ -62,17 +64,17 @@ export default function Portfolio() {
                 <RowSectionContainer
                     changeClass={styles.columnReverse}
                     jsxContent={
-                        <Project 
-                        imgSrc={'/img/portfolio-page/jesseMockUp.svg'} 
-                        imgHeight={658} 
-                        imgWidth={876} 
-                        visitHref={'https://www.j-boocustoms.org/'}
-                        visitLinkText={'Visit Site'}
-                        repoHref={'https://github.com/HammontreeWebDev/j-boo-customs-nextJS'}
-                        repoLinkText={'Repository'}
-                        titleText={'Jesse Ryder Brown Foundation, Inc.'} 
-                        disclaimerText={'Built With:'}
-                        additionalText={'ReactJS | NextJS | Node.js | CSS | Figma'}
+                        <Project
+                            imgSrc={'/img/portfolio-page/jesseMockUp.svg'}
+                            imgHeight={658}
+                            imgWidth={876}
+                            visitHref={'https://www.j-boocustoms.org/'}
+                            visitLinkText={'Visit Site'}
+                            repoHref={'https://github.com/HammontreeWebDev/j-boo-customs-nextJS'}
+                            repoLinkText={'Repository'}
+                            titleText={'Jesse Ryder Brown Foundation, Inc.'}
+                            disclaimerText={'Built With:'}
+                            additionalText={'ReactJS | NextJS | Node.js | CSS | Figma'}
                         />
                     }
                 />
@@ -82,18 +84,18 @@ export default function Portfolio() {
                 <RowSectionContainer
                     changeClass={styles.rowReverse}
                     jsxContent={
-                        <Project 
-                        imgSrc={'/img/portfolio-page/brofitMockUp.svg'} 
-                        imgHeight={658} 
-                        imgWidth={876} 
-                        visitHref={'https://www.reesewilder.com/'}
-                        visitLinkText={'Visit Site'}
-                        repoHref={'https://github.com/HammontreeWebDev/reese-wilder'}
-                        repoLinkText={'Repository'}
-                        titleText={'BroFit Personal Training'} 
-                        disclaimerText={'Built With:'}
-                        additionalText={'HTML | BootStrap | CSS | JavaScript (repository is private due to client request)'}
-                        reverseText={styles.reverseText} 
+                        <Project
+                            imgSrc={'/img/portfolio-page/brofitMockUp.svg'}
+                            imgHeight={658}
+                            imgWidth={876}
+                            visitHref={'https://www.reesewilder.com/'}
+                            visitLinkText={'Visit Site'}
+                            repoHref={'https://github.com/HammontreeWebDev/reese-wilder'}
+                            repoLinkText={'Repository'}
+                            titleText={'BroFit Personal Training'}
+                            disclaimerText={'Built With:'}
+                            additionalText={'HTML | BootStrap | CSS | JavaScript (repository is private due to client request)'}
+                            reverseText={styles.reverseText}
                         />
                     }
                 />
@@ -104,17 +106,17 @@ export default function Portfolio() {
                 <RowSectionContainer
                     changeClass={styles.columnReverse}
                     jsxContent={
-                        <Project 
-                        imgSrc={'/img/portfolio-page/outtaTouchMockUp.svg'} 
-                        imgHeight={658} 
-                        imgWidth={876} 
-                        visitHref={'https://outta-touch.herokuapp.com/'}
-                        visitLinkText={'Visit Site'}
-                        repoHref={'https://github.com/argounova/outta-touch'}
-                        repoLinkText={'Repository'}
-                        titleText={'Outta Touch'} 
-                        disclaimerText={'Built With:'}
-                        additionalText={'MongoDB | Express.js | ReactJS | Node.js | Apollo Client | Apollo Server | Web-sockets | GraphQL | GraphQL Subscriptions'}
+                        <Project
+                            imgSrc={'/img/portfolio-page/outtaTouchMockUp.svg'}
+                            imgHeight={658}
+                            imgWidth={876}
+                            visitHref={'https://outta-touch.herokuapp.com/'}
+                            visitLinkText={'Visit Site'}
+                            repoHref={'https://github.com/argounova/outta-touch'}
+                            repoLinkText={'Repository'}
+                            titleText={'Outta Touch'}
+                            disclaimerText={'Built With:'}
+                            additionalText={'MongoDB | Express.js | ReactJS | Node.js | Apollo Client | Apollo Server | Web-sockets | GraphQL | GraphQL Subscriptions'}
                         />
                     }
                 />
@@ -125,18 +127,18 @@ export default function Portfolio() {
                 <RowSectionContainer
                     changeClass={styles.rowReverse}
                     jsxContent={
-                        <Project 
-                        imgSrc={'/img/portfolio-page/mtgMockUp.svg'} 
-                        imgHeight={658} 
-                        imgWidth={875} 
-                        visitHref={'https://peaceful-escarpment-11973.herokuapp.com/'}
-                        visitLinkText={'Visit Site'}
-                        repoHref={'https://github.com/HammontreeWebDev/MTGpp'}
-                        repoLinkText={'Repository'}
-                        titleText={'MTG++'} 
-                        disclaimerText={'Built With:'}
-                        additionalText={'Node.js | Express.js | mySQL | JavaScript | jQuery | Handlebars | Bootstrap | CSS'}
-                        reverseText={styles.reverseText} 
+                        <Project
+                            imgSrc={'/img/portfolio-page/mtgMockUp.svg'}
+                            imgHeight={658}
+                            imgWidth={875}
+                            visitHref={'https://peaceful-escarpment-11973.herokuapp.com/'}
+                            visitLinkText={'Visit Site'}
+                            repoHref={'https://github.com/HammontreeWebDev/MTGpp'}
+                            repoLinkText={'Repository'}
+                            titleText={'MTG++'}
+                            disclaimerText={'Built With:'}
+                            additionalText={'Node.js | Express.js | mySQL | JavaScript | jQuery | Handlebars | Bootstrap | CSS'}
+                            reverseText={styles.reverseText}
                         />
                     }
                 />
@@ -147,17 +149,17 @@ export default function Portfolio() {
                 <RowSectionContainer
                     changeClass={styles.columnReverse}
                     jsxContent={
-                        <Project 
-                        imgSrc={'/img/portfolio-page/pokeMockUp.svg'} 
-                        imgHeight={658} 
-                        imgWidth={875} 
-                        visitHref={'https://luckysal.github.io/pokewire/index.html'}
-                        visitLinkText={'Visit Site'}
-                        repoHref={'https://github.com/LuckySal/pokewire'}
-                        repoLinkText={'Repository'}
-                        titleText={'PokéWire'} 
-                        disclaimerText={'Built With:'}
-                        additionalText={'HTML | JavaScript | jQuery | Bulma | CSS | Third Party API'}
+                        <Project
+                            imgSrc={'/img/portfolio-page/pokeMockUp.svg'}
+                            imgHeight={658}
+                            imgWidth={875}
+                            visitHref={'https://luckysal.github.io/pokewire/index.html'}
+                            visitLinkText={'Visit Site'}
+                            repoHref={'https://github.com/LuckySal/pokewire'}
+                            repoLinkText={'Repository'}
+                            titleText={'PokéWire'}
+                            disclaimerText={'Built With:'}
+                            additionalText={'HTML | JavaScript | jQuery | Bulma | CSS | Third Party API'}
                         />
                     }
                 />
