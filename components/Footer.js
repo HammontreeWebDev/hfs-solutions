@@ -152,7 +152,7 @@ export default function Footer() {
                                 <Skeleton variant="rectangular">
                                     <Image
                                         className={styles.logo}
-                                        src={'../img/Footer/linkedin.svg'}
+                                        src={'/img/Footer/linkedin.svg'}
                                         width={281}
                                         height={70}
                                         alt="linked in logo"
@@ -166,7 +166,7 @@ export default function Footer() {
                                     <a href={'https://www.linkedin.com/in/kaileb-hammontree/'}>
                                         <Image
                                             className={styles.logo}
-                                            src={'../img/Footer/linkedin.svg'}
+                                            src={'/img/Footer/linkedin.svg'}
                                             width={281}
                                             height={70}
                                             alt="linked in logo" />
@@ -182,7 +182,7 @@ export default function Footer() {
 
                                     <Image
                                         className={styles.logo}
-                                        src={'../img/Footer/stackoverflow.svg'}
+                                        src={'/img/Footer/stackoverflow.svg'}
                                         width={71}
                                         height={70}
                                         alt="stack overflow logo"
@@ -209,7 +209,7 @@ export default function Footer() {
 
                                     <Image
                                         className={styles.logo}
-                                        src={'../img/Footer/github.svg'}
+                                        src={'/img/Footer/github.svg'}
                                         width={197}
                                         height={70}
                                         alt="git hub logo"
@@ -225,7 +225,7 @@ export default function Footer() {
                                     <a href={'https://github.com/HammontreeWebDev'}>
                                         <Image
                                             className={styles.logo}
-                                            src={'../img/Footer/github.svg'}
+                                            src={'/img/Footer/github.svg'}
                                             width={197}
                                             height={70}
                                             alt="git hub logo"
@@ -242,7 +242,7 @@ export default function Footer() {
                                  
                                         <Image
                                             className={styles.logo}
-                                            src={'../img/Footer/facebook.svg'}
+                                            src={'/img/Footer/facebook.svg'}
                                             width={71}
                                             height={70}
                                             alt="facebook logo"
@@ -258,7 +258,7 @@ export default function Footer() {
                                     <a href={'https://www.facebook.com/hammontreefullstacksolutions/'}>
                                         <Image
                                             className={styles.logo}
-                                            src={'../img/Footer/facebook.svg'}
+                                            src={'/img/Footer/facebook.svg'}
                                             width={71}
                                             height={70}
                                             alt="facebook logo"

@@ -4,11 +4,14 @@ import styles from '../styles/Header.module.css';
 import Image from 'next/image';
 import { LineMdCloseToMenuTransition } from './Icons/Menu';
 import { LineMdMenuToCloseTransition } from './Icons/CloseMenu';
+import Skeleton from "@mui/material/Skeleton";
 
 export default function Header() {
 
     const [isMobileDevice, setIsMobileDevice] = useState(false);
     const [mobileMenu, setMobileMenu] = useState(false);
+    const [leftImageLoading, setLeftImageLoading] = useState(true);
+    const [mobileHeaderLoading, setMobileHeaderLoading] = useState(true);
 
     useEffect(() => {
         function handleResize() {
@@ -39,31 +42,76 @@ export default function Header() {
     return (
         // classname for dimension specifications
         <header className={styles.container}>
-            <Image 
-            className={styles.leftImage} 
-            src='/img/Header/hfs-header-left.svg' 
-            width={578} 
-            height={430} 
-            alt='header image'
-            priority={true}
-            />
-            <Image 
-            className={styles.vector} 
-            src='/img/Header/header-vector.svg' 
-            width={1376} 
-            height={130} 
-            alt='background vector image'
+
+            {/* // ! Left Image Skeleton */}
+            {
+                leftImageLoading ?
+
+                    <Skeleton variant="rectangular" width={"30%"} height={"100%"}>
+                        <Image
+                            className={styles.leftImage}
+                            src='/img/Header/hfs-header-left.svg'
+                            width={578}
+                            height={430}
+                            alt='header image'
+                            priority={true}
+                            onLoad={() => setLeftImageLoading(false)}
+                            onLoadedData={() => setLeftImageLoading(false)}
+                        />
+                    </Skeleton>
+
+                    :
+
+
+                    <Image
+                        className={styles.leftImage}
+                        src='/img/Header/hfs-header-left.svg'
+                        width={578}
+                        height={430}
+                        alt='header image'
+                        priority={true}
+                    />
+
+            }
+            <Image
+                className={styles.vector}
+                src='/img/Header/header-vector.svg'
+                width={1376}
+                height={130}
+                alt='background vector image'
             />
 
             <div className={styles.mobileTitleContainer}>
-                <Image 
-                className={styles.mobileHeaderImage}
-                src='/img/Header/mobileHeaderImage.webp'
-                width={768}
-                height={576}
-                alt='mobile header image'
-                priority={true}
-                />
+                {/* // ! mobile header skeleton */}
+                {
+                    mobileHeaderLoading ?
+
+                        <Skeleton variant="rectangular" width={"100%"}>
+
+                            <Image
+                                className={styles.mobileHeaderImage}
+                                src='/img/Header/mobileHeaderImage.webp'
+                                width={768}
+                                height={576}
+                                alt='mobile header image'
+                                priority={true}
+                                onLoad={() => setMobileHeaderLoading(false)}
+                                onLoadedData={() => setMobileHeaderLoading(false)}
+                            />
+
+                        </Skeleton>
+
+                        :
+
+                        <Image
+                            className={styles.mobileHeaderImage}
+                            src='/img/Header/mobileHeaderImage.webp'
+                            width={768}
+                            height={576}
+                            alt='mobile header image'
+                            priority={true}
+                        />
+                }
             </div>
             {
                 isMobileDevice ?
