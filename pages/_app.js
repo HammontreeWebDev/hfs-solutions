@@ -3,6 +3,9 @@
 import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
+
+
 import "../styles/global.css";
 import "animate.css";
 
@@ -43,11 +46,17 @@ const App = ({ Component, pageProps }) => {
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/img/favicon.ico" />
-                <html lang="en" />
             </Head>
-            <Header />
-            <Component {...pageProps} />
-            <Footer />
+
+
+            <AppRouterCacheProvider>
+                <Header />
+                <Component {...pageProps} />
+                <Footer />
+            </AppRouterCacheProvider>
+
+
+
             <SpeedInsights />
         </>
     )

@@ -3,6 +3,8 @@ import styles from '../styles/TitleCarousel.module.css';
 import { CarbonNextFilled } from './Icons/CarbonNextFilled';
 import { CarbonPreviousFilled } from './Icons/CarbonPreviousFilled';
 
+import Skeleton from "@mui/material/Skeleton";
+
 export default function TitleCarousel({ titleText, images, links, disclaimerText, reverseText }) {
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -10,6 +12,7 @@ export default function TitleCarousel({ titleText, images, links, disclaimerText
     const [triggerAnimation, setTriggerAnimation] = useState('');
     const [btnAnimation, setBtnAnimation] = useState('');
     const [nextState, setNextState] = useState(false);
+    const [loading, setLoading] = useState(true);
 
     // use this state to track whether the next and prev buttons are hovered so that you can pause the auto transitions
     const [isHovered, setIsHovered] = useState(false);
@@ -144,6 +147,23 @@ export default function TitleCarousel({ titleText, images, links, disclaimerText
                                     <CarbonPreviousFilled />
                                 </button>
 
+                               {/* //! Wrap image in loading state */}
+
+                               {
+                                loading ?
+
+                                <Skeleton variant="circular">
+                                    <img
+                                        className={`${styles.image} ${triggerAnimation}`}
+                                        src={images[currentImageIndex]}
+                                        alt={`Image ${currentImageIndex + 1}`}
+                                        onLoad={() => setLoading(false)}
+                                        onLoadedData={() => setLoading(false)}
+                                    />
+                                </Skeleton>
+
+                                : 
+
                                 <a 
                                 href={links[currentLinkIndex]
                                 
@@ -154,6 +174,7 @@ export default function TitleCarousel({ titleText, images, links, disclaimerText
                                         alt={`Image ${currentImageIndex + 1}`}
                                     />
                                 </a>
+                               }
 
                                 <button
                                     className={`${styles.btn} ${btnAnimation}`}
