@@ -21,7 +21,8 @@ const bootCampBadgeData = [{
     "id": "https://api.badgr.io/public/assertions/ewkha2NyQ8-IAo-788fTUA",
     "image": {
         "id": "https://api.badgr.io/public/assertions/ewkha2NyQ8-IAo-788fTUA/image"
-    }
+    },
+    "key": "ewkha2NyQ8"
 }];
 
 const cyberBadgeData = [
@@ -29,7 +30,8 @@ const cyberBadgeData = [
         "id": "https://api.badgr.io/public/assertions/Rxyg7wKwTgWLC07_shNy6A",
         "image": {
             "id": "https://api.badgr.io/public/assertions/Rxyg7wKwTgWLC07_shNy6A/image"
-        }
+        },
+        "key": "Rxyg7wKwTgWLC07"
 
     }
 ]
@@ -80,18 +82,14 @@ export default function Certifications() {
                 <RowSectionContainer
                     changeClass={styles.columnReverse}
                     jsxContent={
-                        <>
-                            {bootCampBadgeData.map((badge) => (
-
+                        <>    
                                 <Certificate
-                                    badgeSrc={badge.image.id}
+                                    badgeSrc={bootCampBadgeData[0].image.id}
                                     badgeAlt={'coding boot camp certificate'}
-                                    verifyHref={badge.id}
+                                    verifyHref={bootCampBadgeData[0].id}
                                     verifyLinkText={'Verify'}
                                     titleText={'UCF Coding Boot Camp'}
                                 />
-
-                            ))}
                         </>
                     }
                 />
@@ -103,17 +101,16 @@ export default function Certifications() {
                     changeClass={styles.rowReverse}
                     jsxContent={
                         <>
-                            {cyberBadgeData.map((badge) => (
-
+                           
                                 <Certificate
-                                    badgeSrc={badge.image.id}
+                                    badgeSrc={cyberBadgeData[0].image.id}
                                     badgeAlt={'cyber defense certificate'}
-                                    verifyHref={badge.id}
+                                    verifyHref={cyberBadgeData[0].id}
                                     verifyLinkText={'Verify'}
                                     titleText={'UCF Cyber Defense Professional'}
                                     reverseText={styles.reverseText}
                                 />
-                            ))}
+                           
                         </>
                     }
                 />
