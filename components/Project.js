@@ -1,20 +1,44 @@
 import styles from '../styles/Project.module.css';
 import Image from 'next/image';
+import { useState } from 'react';
+import Skeleton from "@mui/material/Skeleton";
 
 export default function Project({ imgSrc, imgHeight, imgWidth, reverseText, titleText, disclaimerText, additionalText, visitHref, visitLinkText, repoHref, repoLinkText, imgAlt }) {
+
+    const [loading, setLoading] = useState(true);
+
     return (
 
         <>
             {/* Mock Ups & Btn */}
 
             <div className={`column`}>
-                <Image
-                    className={styles.image}
-                    src={imgSrc}
-                    height={imgHeight}
-                    width={imgWidth}
-                    alt={imgAlt}
-                />
+
+                {
+                    loading ?
+
+                        <Skeleton variant="rectangular">
+                            <Image
+                                className={styles.image}
+                                src={imgSrc}
+                                height={imgHeight}
+                                width={imgWidth}
+                                alt={imgAlt}
+                                onLoad={() => setLoading(false)}
+                                onLoadedData={() => setLoading(false)}
+                            />
+                        </Skeleton>
+
+                        :
+
+                        <Image
+                            className={styles.image}
+                            src={imgSrc}
+                            height={imgHeight}
+                            width={imgWidth}
+                            alt={imgAlt}
+                        />
+                }
 
                 <div className={styles.linksRow}>
 
