@@ -173,6 +173,26 @@ export default function Certifications() {
 
                 />
 
+                {/* //! Row 7 Certificate Component ROW REVERSE & reverseText(change to column reverse at smaller screens) */}
+                {/* // * HackerRank REST API */}
+
+                <RowSectionContainer
+                    changeClass={styles.rowReverse}
+                    jsxContent={
+                        <Certificate
+                            imgSrc={'/img/certifications-page/restAPI.webp'}
+                            imgHeight={658}
+                            imgWidth={876}
+                            imgAlt={'front end developer, reactJS certificate'}
+                            verifyHref={'https://www.hackerrank.com/certificates/0d8ceedc0155'}
+                            verifyLinkText={'Verify'}
+                            titleText={'REST API Skill Certification'}
+                            reverseText={styles.reverseText}
+                        />
+                    }
+
+                />
+
             </main>
 
         </>
