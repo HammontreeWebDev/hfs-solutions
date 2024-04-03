@@ -154,6 +154,25 @@ export default function Certifications() {
 
                 />
 
+                {/* //! Row 6 Certificate Component NORMAL & COLUMN REVERSE(smaller screens) */}
+                {/* // * HackerRank Node.js */}
+
+                <RowSectionContainer
+                    changeClass={styles.columnReverse}
+                    jsxContent={
+                        <Certificate
+                            imgSrc={'/img/certifications-page/nodeJS.webp'}
+                            imgHeight={658}
+                            imgWidth={876}
+                            imgAlt={'node.js certificate'}
+                            verifyHref={'https://www.hackerrank.com/certificates/c23ac807c6db'}
+                            verifyLinkText={'Verify'}
+                            titleText={'Node.js Skill Certification'}
+                        />
+                    }
+
+                />
+
             </main>
 
         </>
