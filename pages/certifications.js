@@ -116,23 +116,25 @@ export default function Certifications() {
                 />
 
                 {/* //! Row 4 Certificate Component NORMAL & COLUMN REVERSE(smaller screens) */}
-                {/* // * HackerRank CSS */}
+
+                {/* // * HackerRank Software Engineer */}
 
                 <RowSectionContainer
                     changeClass={styles.columnReverse}
                     jsxContent={
                         <Certificate
-                            imgSrc={'/img/certifications-page/css.webp'}
+                            imgSrc={'/img/certifications-page/softwareEngineer.webp'}
                             imgHeight={658}
                             imgWidth={876}
-                            imgAlt={'css certificate'}
-                            verifyHref={'https://www.hackerrank.com/certificates/c7a702eeeac3'}
+                            imgAlt={'Software Engineer Certification'}
+                            verifyHref={'https://www.hackerrank.com/certificates/425ffb915323'}
                             verifyLinkText={'Verify'}
-                            titleText={'CSS Skill Certification'}
+                            titleText={'Software Engineer Certification'}
                         />
                     }
 
                 />
+                
 
                 {/* //! Row 5 Certificate Component ROW REVERSE & reverseText(change to column reverse at smaller screens) */}
                 {/* // * HackerRank Front End (ReactJS) */}
@@ -183,11 +185,30 @@ export default function Certifications() {
                             imgSrc={'/img/certifications-page/restAPI.webp'}
                             imgHeight={658}
                             imgWidth={876}
-                            imgAlt={'front end developer, reactJS certificate'}
+                            imgAlt={'REST API Certification'}
                             verifyHref={'https://www.hackerrank.com/certificates/0d8ceedc0155'}
                             verifyLinkText={'Verify'}
                             titleText={'REST API Skill Certification'}
                             reverseText={styles.reverseText}
+                        />
+                    }
+
+                />
+
+                {/* //! Row 8 Certificate Component NORMAL & COLUMN REVERSE(smaller screens) */}
+                {/* // * HackerRank CSS */}
+
+                <RowSectionContainer
+                    changeClass={styles.columnReverse}
+                    jsxContent={
+                        <Certificate
+                            imgSrc={'/img/certifications-page/css.webp'}
+                            imgHeight={658}
+                            imgWidth={876}
+                            imgAlt={'css certificate'}
+                            verifyHref={'https://www.hackerrank.com/certificates/c7a702eeeac3'}
+                            verifyLinkText={'Verify'}
+                            titleText={'CSS Skill Certification'}
                         />
                     }
 
