@@ -21,7 +21,7 @@
     right: 0%;
     top: 0%;
     width: 72vw;
-    height: auto;
+    height: 200px;
 }
 
 .navRow {
@@ -76,6 +76,15 @@
 .navLink {
     text-decoration: none;
     color: white;
+    padding: 0.5%;
+    border-radius: 1rem;
+    /* for the transition */
+    transition: color .3s ease-in-out;
+}
+
+.hoverLink:hover{
+    border-radius: 1rem;
+    color: black;
 }
 
 @media screen and (max-width: 1235px) {

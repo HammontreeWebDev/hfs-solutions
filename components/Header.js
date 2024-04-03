@@ -194,11 +194,11 @@ export default function Header() {
                     :
 
                     <div className={styles.navRow}>
-                        <Link className={`${styles.navLink} subText`} href='/'>Home</Link>
-                        <Link className={`${styles.navLink} subText`} href='/biography'>Biography</Link>
-                        <Link className={`${styles.navLink} subText`} href='/contact'>Contact</Link>
-                        <Link className={`${styles.navLink} subText`} href='/portfolio'>Portfolio</Link>
-                        <Link className={`${styles.navLink} subText`} href='/certifications'>Certifications</Link>
+                        <Link className={`${styles.navLink} ${styles.hoverLink} subText`} href='/'>Home</Link>
+                        <Link className={`${styles.navLink} ${styles.hoverLink} subText`} href='/biography'>Biography</Link>
+                        <Link className={`${styles.navLink} ${styles.hoverLink} subText`} href='/contact'>Contact</Link>
+                        <Link className={`${styles.navLink} ${styles.hoverLink} subText`} href='/portfolio'>Portfolio</Link>
+                        <Link className={`${styles.navLink} ${styles.hoverLink} subText`} href='/certifications'>Certifications</Link>
                     </div>
             }
         </header>
