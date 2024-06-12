@@ -198,7 +198,7 @@ export default function Header() {
                         <Link className={`${styles.navLink} ${styles.hoverLink} subText`} href='/biography'>Biography</Link>
                         <Link className={`${styles.navLink} ${styles.hoverLink} subText`} href='/contact'>Contact</Link>
                         <Link className={`${styles.navLink} ${styles.hoverLink} subText`} href='/portfolio'>Portfolio</Link>
-                        <Link className={`${styles.navLink} ${styles.hoverLink} subText`} href='/certifications'>Certifications</Link>
+                        <Link className={`${styles.navLink} ${styles.hoverLink} subText`} href='/certifications'>Experience</Link>
                     </div>
             }
         </header>

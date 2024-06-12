@@ -66,21 +66,25 @@ export default function Project({ imgSrc, imgHeight, imgWidth, reverseText, titl
                             badgeLoading ?
 
                                 <Skeleton variant="circular">
-                                    <img
+                                    <Image
                                         className={`${styles.badge}`}
                                         src={badgeSrc}
                                         alt={badgeAlt}
                                         onLoad={() => setBadgeLoading(false)}
                                         onLoadedData={() => setBadgeLoading(false)}
+                                        height={400}
+                                        width={400}
                                     />
                                 </Skeleton>
 
                                 :
 
-                                <img
+                                <Image
                                     className={`${styles.badge}`}
                                     src={badgeSrc}
                                     alt={badgeAlt}
+                                    height={400}
+                                    width={400}
                                 />
                         }
                         <div className={styles.linksRow}>

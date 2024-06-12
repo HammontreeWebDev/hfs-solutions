@@ -18,7 +18,7 @@ import Certificate from "../components/Certificate";
 
 // Badge data
 const bootCampBadgeData = [{
-    "id": "https://api.badgr.io/public/assertions/ewkha2NyQ8-IAo-788fTUA",
+    "id": "https://api.badgr.io/public/assertions/ewkha2NyQ8-IAo-788fTUA?identity__email=kaileb47%40outlook.com",
     "image": {
         "id": "https://api.badgr.io/public/assertions/ewkha2NyQ8-IAo-788fTUA/image"
     },
@@ -27,7 +27,7 @@ const bootCampBadgeData = [{
 
 const cyberBadgeData = [
     {
-        "id": "https://api.badgr.io/public/assertions/Rxyg7wKwTgWLC07_shNy6A",
+        "id": "https://api.badgr.io/public/assertions/Rxyg7wKwTgWLC07_shNy6A?identity__email=kaileb47%40outlook.com",
         "image": {
             "id": "https://api.badgr.io/public/assertions/Rxyg7wKwTgWLC07_shNy6A/image"
         },
@@ -77,143 +77,91 @@ export default function Certifications() {
                     }
                 />
 
-                {/* //! Row 2 Certificate Component NORMAL & COLUMN REVERSE(smaller screens) */}
-                {/* // * UCF Boot Camp */}
+               {/* //! PROFESSIONAL EXPERIENCE */}
+
+                <section className={styles.experienceContainer}>
+                    <h2 className={styles.centerTitle}>
+                        Professional Experience
+                    </h2>
+                </section>
+
+                {/* // * Software Engineering Lead Analyst */}
                 <RowSectionContainer
                     changeClass={styles.columnReverse}
                     jsxContent={
-                        <>    
-                                <Certificate
-                                    badgeSrc={bootCampBadgeData[0].image.id}
-                                    badgeAlt={'coding boot camp certificate'}
-                                    verifyHref={bootCampBadgeData[0].id}
-                                    verifyLinkText={'Verify'}
-                                    titleText={'UCF Coding Boot Camp'}
-                                />
+                        <>
+                            <Certificate
+                                badgeSrc={'/img/certifications-page/software-engineer.png'}
+                                badgeAlt={'software engineering'}
+                                verifyHref={'https://www.linkedin.com/in/kaileb-hammontree/'}
+                                verifyLinkText={'Learn More'}
+                                titleText={'Software Engineering Lead Analyst'}
+                            />
                         </>
                     }
                 />
 
-                {/* //! Row 3 Certificate Component ROW REVERSE & reverseText(change to column reverse at smaller screens) */}
-                {/* // * UCF CYBER */}
-
+                {/* // * Developer | Owner */}
                 <RowSectionContainer
                     changeClass={styles.rowReverse}
                     jsxContent={
                         <>
-                           
-                                <Certificate
-                                    badgeSrc={cyberBadgeData[0].image.id}
-                                    badgeAlt={'cyber defense certificate'}
-                                    verifyHref={cyberBadgeData[0].id}
-                                    verifyLinkText={'Verify'}
-                                    titleText={'UCF Cyber Defense Professional'}
-                                    reverseText={styles.reverseText}
-                                />
-                           
+
+                            <Certificate
+                                badgeSrc={'/img/certifications-page/hfs-icon.png'}
+                                badgeAlt={'developer - owner'}
+                                verifyHref={'https://www.linkedin.com/in/kaileb-hammontree/'}
+                                verifyLinkText={'Learn More'}
+                                titleText={'Owner | Developer'}
+                                reverseText={styles.reverseText}
+                            />
+
                         </>
                     }
                 />
 
-                {/* //! Row 4 Certificate Component NORMAL & COLUMN REVERSE(smaller screens) */}
+                {/* //! PROFESSIONAL EDUCATION */}
 
-                {/* // * HackerRank Software Engineer */}
+                <section className={styles.experienceContainer}>
+                    <h2 className={styles.centerTitle}>
+                        Professional Education
+                    </h2>
+                </section>
 
+                {/* // * UCF Boot Camp */}
                 <RowSectionContainer
                     changeClass={styles.columnReverse}
                     jsxContent={
-                        <Certificate
-                            imgSrc={'/img/certifications-page/softwareEngineer.webp'}
-                            imgHeight={658}
-                            imgWidth={876}
-                            imgAlt={'Software Engineer Certification'}
-                            verifyHref={'https://www.hackerrank.com/certificates/425ffb915323'}
-                            verifyLinkText={'Verify'}
-                            titleText={'Software Engineer Certification'}
-                        />
+                        <>
+                            <Certificate
+                                badgeSrc={bootCampBadgeData[0].image.id}
+                                badgeAlt={'coding boot camp certificate'}
+                                verifyHref={bootCampBadgeData[0].id}
+                                verifyLinkText={'Learn More'}
+                                titleText={'UCF Coding Boot Camp'}
+                            />
+                        </>
                     }
-
                 />
-                
 
-                {/* //! Row 5 Certificate Component ROW REVERSE & reverseText(change to column reverse at smaller screens) */}
-                {/* // * HackerRank Front End (ReactJS) */}
-
+                {/* // * UCF CYBER */}
                 <RowSectionContainer
                     changeClass={styles.rowReverse}
                     jsxContent={
-                        <Certificate
-                            imgSrc={'/img/certifications-page/frontEnd.webp'}
-                            imgHeight={658}
-                            imgWidth={876}
-                            imgAlt={'front end developer, reactJS certificate'}
-                            verifyHref={'https://www.hackerrank.com/certificates/4d0e4bd62b7c'}
-                            verifyLinkText={'Verify'}
-                            titleText={'Front-End Developer (ReactJS) Certification'}
-                            reverseText={styles.reverseText}
-                        />
+                        <>
+
+                            <Certificate
+                                badgeSrc={cyberBadgeData[0].image.id}
+                                badgeAlt={'cyber defense certificate'}
+                                verifyHref={cyberBadgeData[0].id}
+                                verifyLinkText={'Learn More'}
+                                titleText={'UCF Cyber Defense Professional'}
+                                reverseText={styles.reverseText}
+                            />
+
+                        </>
                     }
-
                 />
-
-                {/* //! Row 6 Certificate Component NORMAL & COLUMN REVERSE(smaller screens) */}
-                {/* // * HackerRank Node.js */}
-
-                <RowSectionContainer
-                    changeClass={styles.columnReverse}
-                    jsxContent={
-                        <Certificate
-                            imgSrc={'/img/certifications-page/nodeJS.webp'}
-                            imgHeight={658}
-                            imgWidth={876}
-                            imgAlt={'node.js certificate'}
-                            verifyHref={'https://www.hackerrank.com/certificates/c23ac807c6db'}
-                            verifyLinkText={'Verify'}
-                            titleText={'Node.js Skill Certification'}
-                        />
-                    }
-
-                />
-
-                {/* //! Row 7 Certificate Component ROW REVERSE & reverseText(change to column reverse at smaller screens) */}
-                {/* // * HackerRank REST API */}
-
-                <RowSectionContainer
-                    changeClass={styles.rowReverse}
-                    jsxContent={
-                        <Certificate
-                            imgSrc={'/img/certifications-page/restAPI.webp'}
-                            imgHeight={658}
-                            imgWidth={876}
-                            imgAlt={'REST API Certification'}
-                            verifyHref={'https://www.hackerrank.com/certificates/0d8ceedc0155'}
-                            verifyLinkText={'Verify'}
-                            titleText={'REST API Skill Certification'}
-                            reverseText={styles.reverseText}
-                        />
-                    }
-
-                />
-
-                {/* //! Row 8 Certificate Component NORMAL & COLUMN REVERSE(smaller screens) */}
-                {/* // * HackerRank CSS */}
-
-                <RowSectionContainer
-                    changeClass={styles.columnReverse}
-                    jsxContent={
-                        <Certificate
-                            imgSrc={'/img/certifications-page/css.webp'}
-                            imgHeight={658}
-                            imgWidth={876}
-                            imgAlt={'css certificate'}
-                            verifyHref={'https://www.hackerrank.com/certificates/c7a702eeeac3'}
-                            verifyLinkText={'Verify'}
-                            titleText={'CSS Skill Certification'}
-                        />
-                    }
-
-                />
-
             </main>
 
         </>

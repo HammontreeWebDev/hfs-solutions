@@ -6,6 +6,24 @@
     padding: 0% 1% 0% 1%;
 }
 
+.centerTitle {
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: var(--sub-text);
+    color: var(--alt1);
+    background-color: var(--alt4);
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.experienceContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-top: 3px solid white;
+}
+
 /* !Override the previous css for the components*/
 .rowReverse {
     flex-direction: row-reverse!important;
