@@ -4,6 +4,19 @@
     text-align: right;
 }
 
+.bottomContainer {
+    height: 50%;
+    width: 100%;
+    text-align: right;
+    background-color: var(--alt4);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.spanText {
+    color: white;
+}
+
 .image{
     width: 100%;
     height: auto;

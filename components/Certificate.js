@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Skeleton from "@mui/material/Skeleton";
 
 
-export default function Project({ imgSrc, imgHeight, imgWidth, reverseText, titleText, verifyHref, verifyLinkText, imgAlt, badgeSrc, badgeAlt, badgeKey }) {
+export default function Project({ imgSrc, imgHeight, imgWidth, reverseText, titleText, verifyHref, verifyLinkText, imgAlt, badgeSrc, badgeAlt, badgeKey, disclaimerText, additionalText }) {
 
     const [imageLoading, setImageLoading] = useState(true);
     const [badgeLoading, setBadgeLoading] = useState(true);
@@ -106,6 +106,22 @@ export default function Project({ imgSrc, imgHeight, imgWidth, reverseText, titl
             <div className={`column`}>
                 <div className={`${styles.titleContainer} titleText ${reverseText}`}>
                     <h1>{titleText}</h1>
+                </div>
+
+                <div className={`${styles.bottomContainer} disclaimerText ${reverseText}`}>
+                    <p>
+
+                        {disclaimerText}
+
+                        <br />
+
+                        <span className={styles.spanText}>
+
+                            {additionalText}
+
+                        </span>
+
+                    </p>
                 </div>
 
             </div>

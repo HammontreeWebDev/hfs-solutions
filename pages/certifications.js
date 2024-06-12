@@ -96,6 +96,8 @@ export default function Certifications() {
                                 verifyHref={'https://www.linkedin.com/in/kaileb-hammontree/'}
                                 verifyLinkText={'Learn More'}
                                 titleText={'Software Engineering Lead Analyst'}
+                                disclaimerText={'April 2024 - Present'}
+                                additionalText={'Evernorth Health Services (Contract Position)'}
                             />
                         </>
                     }
@@ -110,10 +112,12 @@ export default function Certifications() {
                             <Certificate
                                 badgeSrc={'/img/certifications-page/hfs-icon.png'}
                                 badgeAlt={'developer - owner'}
-                                verifyHref={'https://www.linkedin.com/in/kaileb-hammontree/'}
+                                verifyHref={'/portfolio'}
                                 verifyLinkText={'Learn More'}
                                 titleText={'Owner | Developer'}
                                 reverseText={styles.reverseText}
+                                disclaimerText={'June 2023 - Present'}
+                                additionalText={'Hammontree Full-Stack Solutions LLC'}
                             />
 
                         </>
@@ -138,7 +142,10 @@ export default function Certifications() {
                                 badgeAlt={'coding boot camp certificate'}
                                 verifyHref={bootCampBadgeData[0].id}
                                 verifyLinkText={'Learn More'}
-                                titleText={'UCF Coding Boot Camp'}
+                                titleText={'Coding Boot Camp'}
+                                disclaimerText={'September 2022 - December 2022'}
+                                additionalText={'University Of Central Florida'}
+
                             />
                         </>
                     }
@@ -155,8 +162,10 @@ export default function Certifications() {
                                 badgeAlt={'cyber defense certificate'}
                                 verifyHref={cyberBadgeData[0].id}
                                 verifyLinkText={'Learn More'}
-                                titleText={'UCF Cyber Defense Professional'}
+                                titleText={'Cyber Defense Professional'}
                                 reverseText={styles.reverseText}
+                                disclaimerText={'February 2021 - December 2021'}
+                                additionalText={'University Of Central Florida'}
                             />
 
                         </>

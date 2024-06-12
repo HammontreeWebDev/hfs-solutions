@@ -10,7 +10,7 @@
     text-align: right;
     background-color: var(--alt4);
     border-radius: 1rem;
-    padding: 0% 1% 0% 1%;
+    padding: 1rem;
 }
 
 .image{
@@ -19,7 +19,7 @@
 }
 
 .spanText {
-    color: var(--alt1);
+    color: white;
 }
 
 .linksRow{ 
