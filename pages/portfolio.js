@@ -62,10 +62,29 @@ export default function Portfolio() {
                     }
                 />
 
-                {/* //! Row 2 Project Component NORMAL & COLUMN REVERSE(smaller screens)*/}
-                {/* //* Jesse Ryder Brown Foundation */}
+                {/* //* PokéWire Re-Imagined */}
                 <RowSectionContainer
                     changeClass={styles.columnReverse}
+                    jsxContent={
+                        <Project
+                            imgSrc={'/img/portfolio-page/pw-reimagined.png'}
+                            imgHeight={658}
+                            imgWidth={876}
+                            imgAlt={'pokéwire re-imagined mockup'}
+                            visitHref={'/portfolio/comingsoon'}
+                            visitLinkText={'Visit Site'}
+                            repoHref={'https://github.com/HammontreeWebDev/pokewire-reimagined'}
+                            repoLinkText={'Repository'}
+                            titleText={'PokéWire Re-Imagined'}
+                            disclaimerText={'Built With:'}
+                            additionalText={'NextJS | ReactJS | Tailwind CSS | Node.js | PostgreSQL | Prisma | IndexedDB | Local Storage'}
+                        />
+                    }
+                />
+
+                {/* //* Jesse Ryder Brown Foundation */}
+                <RowSectionContainer
+                    changeClass={styles.rowReverse}
                     jsxContent={
                         <Project
                             imgSrc={'/img/portfolio-page/jesseMockUp.webp'}
@@ -79,14 +98,14 @@ export default function Portfolio() {
                             titleText={'Jesse Ryder Brown Foundation, Inc.'}
                             disclaimerText={'Built With:'}
                             additionalText={'ReactJS | NextJS | Node.js | CSS | Figma'}
+                            reverseText={styles.reverseText}
                         />
                     }
                 />
 
-                {/* //! Row 3 Project Component ROW REVERSE & reverseText(change to column reverse at smaller screens)*/}
                 {/* //* BroFit Personal Training */}
                 <RowSectionContainer
-                    changeClass={styles.rowReverse}
+                    changeClass={styles.columnReverse}
                     jsxContent={
                         <Project
                             imgSrc={'/img/portfolio-page/brofitMockUp.webp'}
@@ -100,16 +119,13 @@ export default function Portfolio() {
                             titleText={'BroFit Personal Training'}
                             disclaimerText={'Built With:'}
                             additionalText={'HTML | BootStrap | CSS | JavaScript (repository is private due to client request)'}
-                            reverseText={styles.reverseText}
                         />
                     }
                 />
 
-
-                {/* //! Row 4 Project Component NORMAL & COLUMN REVERSE(smaller screens)*/}
                 {/* //* Outta Touch */}
                 <RowSectionContainer
-                    changeClass={styles.columnReverse}
+                    changeClass={styles.rowReverse}
                     jsxContent={
                         <Project
                             imgSrc={'/img/portfolio-page/outtaTouchMockUp.webp'}
@@ -123,15 +139,14 @@ export default function Portfolio() {
                             titleText={'Outta Touch'}
                             disclaimerText={'Built With:'}
                             additionalText={'MongoDB | Express.js | ReactJS | Node.js | Apollo Client | Apollo Server | Web-sockets | GraphQL | GraphQL Subscriptions'}
+                            reverseText={styles.reverseText}
                         />
                     }
                 />
 
-
-                {/* //! Row 5 Project Component ROW REVERSE & reverseText (change to column reverse at smaller screens)*/}
                 {/* //* MTG++ */}
                 <RowSectionContainer
-                    changeClass={styles.rowReverse}
+                    changeClass={styles.columnReverse}
                     jsxContent={
                         <Project
                             imgSrc={'/img/portfolio-page/mtgMockUp.webp'}
@@ -145,16 +160,13 @@ export default function Portfolio() {
                             titleText={'MTG++'}
                             disclaimerText={'Built With:'}
                             additionalText={'Node.js | Express.js | mySQL | JavaScript | jQuery | Handlebars | Bootstrap | CSS'}
-                            reverseText={styles.reverseText}
                         />
                     }
                 />
 
-
-                {/* //! Row 6 Project Component NORMAL & COLUMN REVERSE(smaller screens)*/}
                 {/* //* PokéWire */}
                 <RowSectionContainer
-                    changeClass={styles.columnReverse}
+                    changeClass={styles.rowReverse}
                     jsxContent={
                         <Project
                             imgSrc={'/img/portfolio-page/pokeMockUp.webp'}
@@ -168,6 +180,7 @@ export default function Portfolio() {
                             titleText={'PokéWire'}
                             disclaimerText={'Built With:'}
                             additionalText={'HTML | JavaScript | jQuery | Bulma | CSS | Third Party API'}
+                            reverseText={styles.reverseText}
                         />
                     }
                 />
